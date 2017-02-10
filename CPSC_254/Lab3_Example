@@ -1,0 +1,189 @@
+login as: 890180391
+890180391@137.151.224.134's password:
+[890180391@vclvm ~]$ PS1='[\u@\h \d \t \w]'
+[890180391@vclvm Thu Feb 09 20:22:37 ~]vim
+[890180391@vclvm Thu Feb 09 20:42:11 ~]vi
+[890180391@vclvm Thu Feb 09 20:42:33 ~]cp ./800747636_WorkEnv/.vimrc .
+cp: cannot stat `./800747636_WorkEnv/.vimrc': No such file or directory
+[890180391@vclvm Thu Feb 09 20:49:05 ~]man cp
+[890180391@vclvm Thu Feb 09 20:49:17 ~]mkdir home
+[890180391@vclvm Thu Feb 09 21:07:07 ~]cd home
+[890180391@vclvm Thu Feb 09 21:07:08 ~/home]mkdir 890180391
+[890180391@vclvm Thu Feb 09 21:07:17 ~/home]cd 890180391
+[890180391@vclvm Thu Feb 09 21:07:22 ~/home/890180391]mkdir 890180391_WorkEnv
+[890180391@vclvm Thu Feb 09 21:07:35 ~/home/890180391]cd 890180391_WorkEnv
+[890180391@vclvm Thu Feb 09 21:07:45 ~/home/890180391/890180391_WorkEnv]mkdir Workspace
+[890180391@vclvm Thu Feb 09 21:07:58 ~/home/890180391/890180391_WorkEnv]cd Workspace
+[890180391@vclvm Thu Feb 09 21:08:01 ~/home/890180391/890180391_WorkEnv/Workspace]cp If_perl.sh
+cp: missing destination file operand after `If_perl.sh'
+Try `cp --help' for more information.
+[890180391@vclvm Thu Feb 09 21:08:12 ~/home/890180391/890180391_WorkEnv/Workspace]touch If_perl.sh
+[890180391@vclvm Thu Feb 09 21:08:53 ~/home/890180391/890180391_WorkEnv/Workspace]vi If_perl.sh
+[890180391@vclvm Thu Feb 09 21:09:17 ~/home/890180391/890180391_WorkEnv/Workspace]touch While_perl.sh
+[890180391@vclvm Thu Feb 09 21:09:31 ~/home/890180391/890180391_WorkEnv/Workspace]ls -all
+total 8
+drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:09 .
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+-rw-r--r--. 1 890180391 vcl    0 Feb  9 21:08 If_perl.sh
+-rw-r--r--. 1 890180391 vcl    0 Feb  9 21:09 While_perl.sh
+[890180391@vclvm Thu Feb 09 21:09:37 ~/home/890180391/890180391_WorkEnv/Workspace]cd..
+-bash: cd..: command not found
+[890180391@vclvm Thu Feb 09 21:09:44 ~/home/890180391/890180391_WorkEnv/Workspace]cd.
+-bash: cd.: command not found
+[890180391@vclvm Thu Feb 09 21:09:45 ~/home/890180391/890180391_WorkEnv/Workspace].
+-bash: .: filename argument required
+.: usage: . filename [arguments]
+[890180391@vclvm Thu Feb 09 21:09:47 ~/home/890180391/890180391_WorkEnv/Workspace]cd ..
+[890180391@vclvm Thu Feb 09 21:09:48 ~/home/890180391/890180391_WorkEnv]ln -s Lab3SoftLink /Workspace/If_perl.sh
+ln: creating symbolic link `/Workspace/If_perl.sh': No such file or directory
+[890180391@vclvm Thu Feb 09 21:12:04 ~/home/890180391/890180391_WorkEnv]ln -s Lab3SoftLink Workspace/If_perl.sh
+ln: creating symbolic link `Workspace/If_perl.sh': File exists
+[890180391@vclvm Thu Feb 09 21:12:39 ~/home/890180391/890180391_WorkEnv]ls -all
+total 12
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 .
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:09 Workspace
+[890180391@vclvm Thu Feb 09 21:12:47 ~/home/890180391/890180391_WorkEnv]ln -s Lab3SoftLink.txt Workspace/If_perl.sh
+ln: creating symbolic link `Workspace/If_perl.sh': File exists
+[890180391@vclvm Thu Feb 09 21:14:23 ~/home/890180391/890180391_WorkEnv]ls -all
+total 12
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 .
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:09 Workspace
+[890180391@vclvm Thu Feb 09 21:14:28 ~/home/890180391/890180391_WorkEnv]ls -ail
+total 12
+135029 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 .
+134987 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+135044 drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:09 Workspace
+[890180391@vclvm Thu Feb 09 21:14:32 ~/home/890180391/890180391_WorkEnv]cd Lab3SoftLink.txt
+-bash: cd: Lab3SoftLink.txt: No such file or directory
+[890180391@vclvm Thu Feb 09 21:14:47 ~/home/890180391/890180391_WorkEnv]ln -s Workspace/If_perl.sh  Lab3.sh
+[890180391@vclvm Thu Feb 09 21:16:16 ~/home/890180391/890180391_WorkEnv]ls -ail
+total 12
+135029 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:16 .
+134987 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+135046 lrwxrwxrwx. 1 890180391 vcl   20 Feb  9 21:16 Lab3.sh -> Workspace/If_perl.sh
+135044 drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:09 Workspace
+[890180391@vclvm Thu Feb 09 21:16:23 ~/home/890180391/890180391_WorkEnv]ln -s Workspace/While_perl.sh  Lab4.sh
+[890180391@vclvm Thu Feb 09 21:17:32 ~/home/890180391/890180391_WorkEnv]ls -ail
+total 12
+135029 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:17 .
+134987 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+135046 lrwxrwxrwx. 1 890180391 vcl   20 Feb  9 21:16 Lab3.sh -> Workspace/If_perl.sh
+135050 lrwxrwxrwx. 1 890180391 vcl   23 Feb  9 21:17 Lab4.sh -> Workspace/While_perl.sh
+135044 drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:09 Workspace
+[890180391@vclvm Thu Feb 09 21:17:35 ~/home/890180391/890180391_WorkEnv]ln -h Workspace/While_perl.sh  Lab3Hard.sh
+ln: invalid option -- 'h'
+Try `ln --help' for more information.
+[890180391@vclvm Thu Feb 09 21:19:33 ~/home/890180391/890180391_WorkEnv]ln Workspace/While_perl.sh  Lab3Hard.sh
+[890180391@vclvm Thu Feb 09 21:19:38 ~/home/890180391/890180391_WorkEnv]ls -ail
+total 12
+135029 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:19 .
+134987 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+135028 -rw-r--r--. 2 890180391 vcl    0 Feb  9 21:09 Lab3Hard.sh
+135046 lrwxrwxrwx. 1 890180391 vcl   20 Feb  9 21:16 Lab3.sh -> Workspace/If_perl.sh
+135050 lrwxrwxrwx. 1 890180391 vcl   23 Feb  9 21:17 Lab4.sh -> Workspace/While_perl.sh
+135044 drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:09 Workspace
+[890180391@vclvm Thu Feb 09 21:19:42 ~/home/890180391/890180391_WorkEnv]cd Lab3Hard.sh
+-bash: cd: Lab3Hard.sh: Not a directory
+[890180391@vclvm Thu Feb 09 21:19:50 ~/home/890180391/890180391_WorkEnv]cat Lab3Hard.sh
+[890180391@vclvm Thu Feb 09 21:21:11 ~/home/890180391/890180391_WorkEnv]ls -ail
+total 12
+135029 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:19 .
+134987 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+135028 -rw-r--r--. 2 890180391 vcl    0 Feb  9 21:09 Lab3Hard.sh
+135046 lrwxrwxrwx. 1 890180391 vcl   20 Feb  9 21:16 Lab3.sh -> Workspace/If_perl.sh
+135050 lrwxrwxrwx. 1 890180391 vcl   23 Feb  9 21:17 Lab4.sh -> Workspace/While_perl.sh
+135044 drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:09 Workspace
+[890180391@vclvm Thu Feb 09 21:21:15 ~/home/890180391/890180391_WorkEnv]vi Lab3Hard.sh
+[890180391@vclvm Thu Feb 09 21:22:00 ~/home/890180391/890180391_WorkEnv]cat Lab3Hard.sh
+Testing.
+
+[890180391@vclvm Thu Feb 09 21:22:05 ~/home/890180391/890180391_WorkEnv]cat /Workspace/If_perl.sh
+cat: /Workspace/If_perl.sh: No such file or directory
+[890180391@vclvm Thu Feb 09 21:22:22 ~/home/890180391/890180391_WorkEnv]cat Workspace/If_perl.sh
+[890180391@vclvm Thu Feb 09 21:22:33 ~/home/890180391/890180391_WorkEnv]vi Workspace/If_perl.sh
+[890180391@vclvm Thu Feb 09 21:23:25 ~/home/890180391/890180391_WorkEnv]cat Lab3Hard.sh
+Testing.
+
+[890180391@vclvm Thu Feb 09 21:23:31 ~/home/890180391/890180391_WorkEnv]ln Lab3Hard.sh Lab3.sh
+ln: creating hard link `Lab3.sh': File exists
+[890180391@vclvm Thu Feb 09 21:23:50 ~/home/890180391/890180391_WorkEnv]ls -ail
+total 16
+135029 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:22 .
+134987 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+135028 -rw-r--r--. 2 890180391 vcl   10 Feb  9 21:21 Lab3Hard.sh
+135046 lrwxrwxrwx. 1 890180391 vcl   20 Feb  9 21:16 Lab3.sh -> Workspace/If_perl.sh
+135050 lrwxrwxrwx. 1 890180391 vcl   23 Feb  9 21:17 Lab4.sh -> Workspace/While_perl.sh
+135044 drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:23 Workspace
+[890180391@vclvm Thu Feb 09 21:23:58 ~/home/890180391/890180391_WorkEnv]cat Lab3Hard.sh
+Testing.
+
+[890180391@vclvm Thu Feb 09 21:24:03 ~/home/890180391/890180391_WorkEnv]cat Lab3.sh
+Testing 1,2. LEGGOOOO.
+[890180391@vclvm Thu Feb 09 21:25:08 ~/home/890180391/890180391_WorkEnv]ln Workspace/If_perl.sh Lab3Hard.sh
+ln: creating hard link `Lab3Hard.sh': File exists
+[890180391@vclvm Thu Feb 09 21:26:19 ~/home/890180391/890180391_WorkEnv]rm Lab3Hard.sh
+[890180391@vclvm Thu Feb 09 21:26:45 ~/home/890180391/890180391_WorkEnv]ln Workspace/If_perl.sh Lab3Hard.sh
+[890180391@vclvm Thu Feb 09 21:26:46 ~/home/890180391/890180391_WorkEnv]ls -ail
+total 16
+135029 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:26 .
+134987 drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+135051 -rw-r--r--. 2 890180391 vcl   23 Feb  9 21:23 Lab3Hard.sh
+135046 lrwxrwxrwx. 1 890180391 vcl   20 Feb  9 21:16 Lab3.sh -> Workspace/If_perl.sh
+135050 lrwxrwxrwx. 1 890180391 vcl   23 Feb  9 21:17 Lab4.sh -> Workspace/While_perl.sh
+135044 drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:23 Workspace
+[890180391@vclvm Thu Feb 09 21:26:48 ~/home/890180391/890180391_WorkEnv]cat Lab3Hard.sh
+Testing 1,2. LEGGOOOO.
+[890180391@vclvm Thu Feb 09 21:26:52 ~/home/890180391/890180391_WorkEnv]vi Lab3.sh
+[890180391@vclvm Thu Feb 09 21:27:18 ~/home/890180391/890180391_WorkEnv]cat lab3Hard.sh
+cat: lab3Hard.sh: No such file or directory
+[890180391@vclvm Thu Feb 09 21:27:24 ~/home/890180391/890180391_WorkEnv]cat Lab3Hard.sh
+Testing 1,2. LEGGOOOO. Interesting.
+[890180391@vclvm Thu Feb 09 21:27:30 ~/home/890180391/890180391_WorkEnv]ls -R -all
+.:
+total 16
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:27 .
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+-rw-r--r--. 2 890180391 vcl   36 Feb  9 21:27 Lab3Hard.sh
+lrwxrwxrwx. 1 890180391 vcl   20 Feb  9 21:16 Lab3.sh -> Workspace/If_perl.sh
+lrwxrwxrwx. 1 890180391 vcl   23 Feb  9 21:17 Lab4.sh -> Workspace/While_perl.sh
+drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:27 Workspace
+
+./Workspace:
+total 16
+drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:27 .
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:27 ..
+-rw-r--r--. 2 890180391 vcl   36 Feb  9 21:27 If_perl.sh
+-rw-r--r--. 1 890180391 vcl   10 Feb  9 21:21 While_perl.sh
+[890180391@vclvm Thu Feb 09 21:27:50 ~/home/890180391/890180391_WorkEnv]cd ..
+[890180391@vclvm Thu Feb 09 21:27:59 ~/home/890180391]cd ..
+[890180391@vclvm Thu Feb 09 21:28:02 ~/home]ls -R -all
+.:
+total 12
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 .
+drwx------. 5 890180391 vcl 4096 Feb  9 21:27 ..
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 890180391
+
+./890180391:
+total 12
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 .
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:27 890180391_WorkEnv
+
+./890180391/890180391_WorkEnv:
+total 16
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:27 .
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:07 ..
+-rw-r--r--. 2 890180391 vcl   36 Feb  9 21:27 Lab3Hard.sh
+lrwxrwxrwx. 1 890180391 vcl   20 Feb  9 21:16 Lab3.sh -> Workspace/If_perl.sh
+lrwxrwxrwx. 1 890180391 vcl   23 Feb  9 21:17 Lab4.sh -> Workspace/While_perl.sh
+drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:27 Workspace
+
+./890180391/890180391_WorkEnv/Workspace:
+total 16
+drwxr-xr-x. 2 890180391 vcl 4096 Feb  9 21:27 .
+drwxr-xr-x. 3 890180391 vcl 4096 Feb  9 21:27 ..
+-rw-r--r--. 2 890180391 vcl   36 Feb  9 21:27 If_perl.sh
+-rw-r--r--. 1 890180391 vcl   10 Feb  9 21:21 While_perl.sh
+[890180391@vclvm Thu Feb 09 21:28:06 ~/home]
