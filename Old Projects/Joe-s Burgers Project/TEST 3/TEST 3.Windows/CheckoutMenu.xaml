@@ -1,0 +1,112 @@
+﻿<Page
+    x:Class="TEST_3.CheckoutMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TEST_3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Flyout x:Name="splitFlyout" x:Key="splitByNFlyout">
+            <Grid Height="150" Width="150" Background="#FFF7A64D" Margin="-21,-20">
+                <TextBlock Text="Number of Splits" FontSize="24" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Foreground="White"/>
+                <ComboBox x:Name="numberToSplit" HorizontalAlignment="Stretch" Margin="10,20,10,0" VerticalAlignment="Center" PlaceholderText="0" FontFamily="Global User Interface">
+                    <ComboBoxItem Content="1"/>
+                    <ComboBoxItem Content="2"/>
+                    <ComboBoxItem Content="3"/>
+                    <ComboBoxItem Content="4"/>
+                    <ComboBoxItem Content="5"/>
+                    <ComboBoxItem Content="6"/>
+                    <ComboBoxItem Content="7"/>
+                    <ComboBoxItem Content="8"/>
+                    <ComboBoxItem Content="9"/>
+                    <ComboBoxItem Content="10"/>
+                </ComboBox>
+                <Button Height="40" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,90,0,0" Background="#FF197DCB" BorderBrush="#33FFFFFF" Content="Ok" Foreground="White" Click="splitEvenlyButton_IsClicked"/>
+            </Grid>
+        </Flyout>
+        <Flyout x:Key="DiscountFlyout" >
+            <Grid Height="100" Width="100" Background="#FFF7A64D" Margin="-21,-20"/>
+        </Flyout>
+    </Page.Resources>
+
+    <!-- Define Grid -->
+    <Grid Background="#FF197DCB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="217*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Button" HorizontalAlignment="Stretch" Height="61" Margin="42,-10,36,0" VerticalAlignment="Top" Width="65" Click="BackButton_IsClicked" Style="{StaticResource NavigationBackButtonNormalStyle}" Grid.Row="8"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" VerticalAlignment="Stretch" FontSize="70" TextAlignment="Center" Grid.ColumnSpan="2" Grid.Column="4" Grid.Row="1">
+        	<Run Text="Total"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,5,10,4" TextWrapping="Wrap" VerticalAlignment="Stretch" FontSize="70" TextAlignment="Center" Grid.ColumnSpan="2" Grid.Column="4" Grid.Row="2">
+        	<Run Text="Charged"/>
+        </TextBlock>
+        <TextBlock x:Name="chargedTextBlock" HorizontalAlignment="Right" Margin="10,5,10,0" Text="0.00" VerticalAlignment="Stretch" FontSize="70" FontWeight="Bold" TextAlignment="Right" Grid.ColumnSpan="2" Grid.Column="6" Grid.Row="2" MaxLines="1"/>
+        <TextBlock x:Name="totalTextblock"  HorizontalAlignment="Right" Margin="0,0,10,0" TextWrapping="Wrap" VerticalAlignment="Stretch" FontSize="70" TextAlignment="Right" Grid.ColumnSpan="2" Grid.Column="6" Grid.Row="1" FontWeight="Bold" Text="0.00"/>
+        <TextBlock x:Name="tableTextblock" HorizontalAlignment="Stretch" Margin="0,0,0,0" TextWrapping="Wrap" Text="To Go" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" TextAlignment="Center" Grid.ColumnSpan="2" FontFamily="Brush Script MT"/>
+        <ScrollViewer HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Grid.RowSpan="4" FontSize="30" IsHitTestVisible="True" BorderThickness="0" HorizontalScrollMode="Disabled" ZoomMode="Disabled">
+            <TextBox x:Name="checkoutReceiptBox" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Grid.RowSpan="4" FontSize="30" IsHitTestVisible="False" IsTextPredictionEnabled="False" IsReadOnly="True" BorderThickness="0"/>
+        </ScrollViewer>
+        <!--
+        <Grid Grid.Column="3" HorizontalAlignment="Stretch" Height="364" Margin="20,10,10,0" Grid.Row="3" Grid.RowSpan="4" VerticalAlignment="Top" Width="542" Grid.ColumnSpan="4">
+            <Frame x:Name="tenKeyFrame" Content="tenKeyFrame" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment="Stretch"/>
+        </Grid>
+        -->
+        <TextBox x:Name="notificationTextbox" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Grid.RowSpan="2" FontSize="30" IsReadOnly="True" IsTextPredictionEnabled="False" IsHitTestVisible="False" BorderThickness="0,2,0,0" BorderBrush="Black"/>
+        <TextBox x:Name="costsTextbox" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Column="3" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Stretch" Grid.ColumnSpan="1" Grid.RowSpan="2" FontSize="30" IsReadOnly="True" IsTextPredictionEnabled="False" IsHitTestVisible="False" TextAlignment="Right" BorderBrush="Black" BorderThickness="0,2,0,0"/>
+        <Button x:Name="cashButton" Content="Cash" Grid.Column="8" HorizontalAlignment="Stretch" Margin="7,13,7,4" VerticalAlignment="Stretch" Width="208" Grid.RowSpan="2" FontSize="40" Background="#FFF7A64D" Click="cashButton_IsClicked"/>
+        <Button Content="Credit&#xA; Card" Grid.Column="8" HorizontalAlignment="Stretch" Margin="7,9,7,8" VerticalAlignment="Stretch" Width="208" Grid.RowSpan="2" Grid.Row="2" FontSize="40" Background="#FFF7A64D" Click="creditCardButton_IsClicked"/>
+        <Button Content="Check" Grid.Column="8" HorizontalAlignment="Stretch" Margin="7,2,7,15" VerticalAlignment="Stretch" Width="208" Grid.RowSpan="2" Grid.Row="4" FontSize="40" Background="#FFF7A64D" Click="checkButton_IsClicked" Flyout="{StaticResource DiscountFlyout}"/>
+        <Button Content="Close" Grid.Column="8" HorizontalAlignment="Stretch" Margin="7,0,7,17" VerticalAlignment="Stretch" Width="208" Grid.RowSpan="3" Grid.Row="6" FontSize="40" Background="#FFF7A64D" Click="closeButton_IsClicked"/>
+        <Button x:Name="splitByNbutton" Content=" Split&#xA;Evenly" Grid.Column="7" HorizontalAlignment="Stretch" Margin="2,-2,3,-3" Grid.Row="3" VerticalAlignment="Stretch" FontSize="25" Background="#FFF7A64D" Click="splitByN_IsClicked" Flyout="{StaticResource splitByNFlyout}"/>
+        <Button Content=" Split&#xA;Items" Grid.Column="7" HorizontalAlignment="Stretch" Margin="2,0,3,-1" Grid.Row="4" VerticalAlignment="Stretch" FontSize="25" Background="#FFF7A64D"/>
+        <Button Content="Discount&#xD;&#xA;      %" Grid.Column="7" HorizontalAlignment="Stretch" Margin="2,0,3,-1" Grid.Row="5" VerticalAlignment="Stretch" FontSize="25" Background="#FFF7A64D">
+            <Button.Flyout>
+                <Flyout>
+                    <Grid Height="100" Width="100" Background="#FFF7A64D" Margin="-21,-20">
+                        <TextBlock Text="Please Enter %" Foreground="White" TextAlignment="Center" FontSize="14.667" Padding="6,10,0,0" TextWrapping="Wrap" IsHitTestVisible="False"/>
+                        <TextBox x:Name="discountTextbox" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,20" MaxLength="3" />
+                        <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="15,0,15,3" Width="70" Click="Button_Click" Background="#FF197DCB" Content="Ok" FontSize="1.333"/>
+                    </Grid>
+                </Flyout>
+            </Button.Flyout>
+        </Button>
+        <Button x:Name="exactChangeButton" Content="  Exact&#xD;&#xA;Change" Grid.Column="7" HorizontalAlignment="Stretch" Margin="2,0,3,-1" Grid.Row="6" VerticalAlignment="Stretch" FontSize="25" Background="#FFF7A64D" Click="exactChangeButton_IsClicked"/>
+        <Button Content="1" Grid.Column="4" HorizontalAlignment="Stretch" Margin="4,-2,-3,-1" Grid.Row="3" VerticalAlignment="Stretch" FontSize="50" FontFamily="Global User Interface" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="2" Grid.Column="5" HorizontalAlignment="Stretch" Margin="4,-2,-3,-1" Grid.Row="3" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="3" Grid.Column="6" HorizontalAlignment="Stretch" Margin="4,-2,-3,-1" Grid.Row="3" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="4" Grid.Column="4" HorizontalAlignment="Stretch" Margin="4,0,-3,-1" Grid.Row="4" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="5" Grid.Column="5" HorizontalAlignment="Stretch" Margin="4,0,-3,-1" Grid.Row="4" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="6" Grid.Column="6" HorizontalAlignment="Stretch" Margin="4,0,-3,-1" Grid.Row="4" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="7" Grid.Column="4" HorizontalAlignment="Stretch" Margin="4,0,-3,-1" Grid.Row="5" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="8" Grid.Column="5" HorizontalAlignment="Stretch" Margin="4,0,-3,-1" Grid.Row="5" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="9" Grid.Column="6" HorizontalAlignment="Stretch" Margin="4,0,-3,-1" Grid.Row="5" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="." Grid.Column="4" HorizontalAlignment="Stretch" Margin="4,0,-3,-1" Grid.Row="6" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="0" Grid.Column="5" HorizontalAlignment="Stretch" Margin="4,0,-3,-1" Grid.Row="6" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="tenKeyButton_IsClicked"/>
+        <Button Content="X" Grid.Column="6" HorizontalAlignment="Stretch" Margin="4,0,-3,-1" Grid.Row="6" VerticalAlignment="Stretch" FontSize="50" Background="#FFF7A64D" Click="clearButton_IsClicked"/>
+        <TextBox x:Name="costTextbox" Grid.Column="3" Grid.RowSpan="4" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderThickness="0" IsReadOnly="True" TextAlignment="Right" IsHitTestVisible="False" IsTextPredictionEnabled="False" FontSize="30"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Center" Height="18" Margin="0,0,0,0" Grid.Row="10" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Width="240" FontSize="15" Grid.ColumnSpan="10" TextAlignment="Center"/>
+
+
+    </Grid>
+</Page>

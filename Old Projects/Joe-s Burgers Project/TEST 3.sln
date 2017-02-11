@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TEST 3", "TEST 3", "{DDA432CC-E0EA-4EEC-930B-B7F9D06B01C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST 3.Windows", "TEST 3\TEST 3.Windows\TEST 3.Windows.csproj", "{D2251805-7ED7-4E14-A857-DB3D8621CB98}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Joe's Burgers UML", "Joe's Burgers UML\Joe's Burgers UML.modelproj", "{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|ARM.Build.0 = Debug|ARM
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|ARM.Deploy.0 = Debug|ARM
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|x64.ActiveCfg = Debug|x64
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|x64.Build.0 = Debug|x64
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|x64.Deploy.0 = Debug|x64
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|x86.ActiveCfg = Debug|x86
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|x86.Build.0 = Debug|x86
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Debug|x86.Deploy.0 = Debug|x86
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|ARM.ActiveCfg = Release|ARM
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|ARM.Build.0 = Release|ARM
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|ARM.Deploy.0 = Release|ARM
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|x64.ActiveCfg = Release|x64
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|x64.Build.0 = Release|x64
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|x64.Deploy.0 = Release|x64
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|x86.ActiveCfg = Release|x86
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|x86.Build.0 = Release|x86
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98}.Release|x86.Deploy.0 = Release|x86
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Debug|ARM.Build.0 = Debug|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Debug|x64.Build.0 = Debug|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Debug|x86.Build.0 = Debug|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Release|ARM.Build.0 = Release|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Release|x64.ActiveCfg = Release|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Release|x64.Build.0 = Release|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Release|x86.ActiveCfg = Release|Any CPU
+		{DEFD6817-2B10-4BC3-B6AA-941EFA91695B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2251805-7ED7-4E14-A857-DB3D8621CB98} = {DDA432CC-E0EA-4EEC-930B-B7F9D06B01C5}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://trippers112.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TEST\u00203\\TEST\u00203.Windows\\TEST\u00203.Windows.csproj
+		SccProjectTopLevelParentUniqueName1 = TEST\u00203.sln
+		SccProjectName1 = TEST\u00203/TEST\u00203.Windows
+		SccLocalPath1 = TEST\u00203\\TEST\u00203.Windows
+		SccProjectUniqueName2 = Joe's\u0020Burgers\u0020UML\\Joe's\u0020Burgers\u0020UML.modelproj
+		SccProjectName2 = Joe's\u0020Burgers\u0020UML
+		SccLocalPath2 = Joe's\u0020Burgers\u0020UML
+	EndGlobalSection
+EndGlobal

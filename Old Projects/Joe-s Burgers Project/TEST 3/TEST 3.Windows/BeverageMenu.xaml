@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="TEST_3.BeverageMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TEST_3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF197DCB" HorizontalAlignment="Stretch">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Hub Orientation="Vertical" Padding="0" MinHeight="{StaticResource FrameHeight}" MinWidth="{StaticResource FrameWidth}">
+            <HubSection Padding="0" HorizontalAlignment="Stretch">
+                <DataTemplate>
+                    <Grid x:Name="entreeGrid" MinWidth="{StaticResource FrameWidth}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90*"></ColumnDefinition>
+                            <ColumnDefinition Width="90*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <local:FoodButton Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="400" Click="FoodItem_Clicked" BorderThickness="0" Padding="0" Content="" foodName="Fountain Drink" cost="1.5">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Assets/fountain-drinks.jpg"/>
+                            </Button.Background>
+                        </local:FoodButton>
+                        <local:FoodButton Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="400" Click="FoodItem_Clicked" BorderThickness="0" Padding="0" Content="" foodName="Juice" cost="1.99">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Assets/Juice.jpg"/>
+                            </Button.Background>
+                        </local:FoodButton>
+                        <TextBox Margin="0,200,0,0"  BorderThickness="0" Background="#FFF7A64D" Opacity="0.75" AcceptsReturn="True" IsReadOnly="True" IsTextPredictionEnabled="False" Text="Fountain Drinks&#xA;A refreshing fountain drink with a choice of Coke, Sprite, Dr. Pepper, Root Beer, Cherry Coke, or Iced Tea. $1.50" FontSize="35" FontFamily="Brush Script MT" TextWrapping="Wrap" IsHitTestVisible="False" Grid.Column="0"/>
+                        <TextBox Margin="0,200,0,0"  BorderThickness="0" Background="#FFF7A64D" Opacity="0.75" AcceptsReturn="True" IsReadOnly="True" IsTextPredictionEnabled="False" Text="Juice&#xA;Joe's freshly squeezed and blended fruit Juice with a choice of Orange Juice, Apple Juice, Mango Juice, Lemonade, or Cranberry Juice. $1.99" FontSize="31" FontFamily="Brush Script MT" TextWrapping="Wrap" IsHitTestVisible="False" Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Padding="0" HorizontalAlignment="Stretch">
+                <DataTemplate>
+                    <Grid x:Name="entreeGrid2" MinWidth="{StaticResource FrameWidth}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90*"></ColumnDefinition>
+                            <ColumnDefinition Width="90*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <local:FoodButton Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="400" Click="FoodItem_Clicked" BorderThickness="0" Padding="0" Content="" foodName="Tea" cost="1.99">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Assets/Tea.jpg"/>
+                            </Button.Background>
+                        </local:FoodButton>
+                        <local:FoodButton Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="400" Click="FoodItem_Clicked" BorderThickness="0" Padding="0" Content="" foodName="Coffee" cost="1.99">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Assets/coffee.jpg"/>
+                            </Button.Background>
+                        </local:FoodButton>
+                        <TextBox Margin="0,200,0,0"  BorderThickness="0" Background="#FFF7A64D" Opacity="0.75" AcceptsReturn="True" IsReadOnly="True" IsTextPredictionEnabled="False" Text="Tea&#xA;Flavorful tea with the choice of green tea, black tea, or herbal tea. $1.99" FontSize="40" FontFamily="Brush Script MT" TextWrapping="Wrap" IsHitTestVisible="False" Grid.Column="0"/>
+                        <TextBox Margin="0,200,0,0"  BorderThickness="0" Background="#FFF7A64D" Opacity="0.75" AcceptsReturn="True" IsReadOnly="True" IsTextPredictionEnabled="False" Text="Coffee&#xA;Joe's freshly brewed aromatic coffee with free refills. $1.99" FontSize="42" FontFamily="Brush Script MT" TextWrapping="Wrap" IsHitTestVisible="False" Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Padding="0" HorizontalAlignment="Stretch">
+                <DataTemplate>
+                    <Grid x:Name="entreeGrid2" MinWidth="{StaticResource FrameWidth}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90*"></ColumnDefinition>
+                            <ColumnDefinition Width="90*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <local:FoodButton Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="400" Click="FoodItem_Clicked" BorderThickness="0" Padding="0" Content="" foodName="Milk Shake" cost="5.49">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Assets/Milkshakes.jpg"/>
+                            </Button.Background>
+                        </local:FoodButton>
+                        <local:FoodButton Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="400" Click="FoodItem_Clicked" BorderThickness="0" Padding="0" Content="" foodName="Fresh Fruit Smoothie" cost="5.99">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Assets/Smoothie.jpg"/>
+                            </Button.Background>
+                        </local:FoodButton>
+                        <TextBox Margin="0,200,0,0"  BorderThickness="0" Background="#FFF7A64D" Opacity="0.75" AcceptsReturn="True" IsReadOnly="True" IsTextPredictionEnabled="False" Text="Milk Shakes&#xA;Brings all the boys to the yard with cool, refreshing taste of milk and honey. Includes a choice of Vanilla, Strawberry, or Chocolate. $5.49" FontSize="31" FontFamily="Brush Script MT" TextWrapping="Wrap" IsHitTestVisible="False" Grid.Column="0"/>
+                        <TextBox Margin="0,200,0,0"  BorderThickness="0" Background="#FFF7A64D" Opacity="0.75" AcceptsReturn="True" IsReadOnly="True" IsTextPredictionEnabled="False" Text="Fresh Fruit Smoothie&#xA; Ice cold, refreshing smoothie with the choice of strawberry, mango, blueberry, cherry, or coconut. $5.99" FontSize="38" FontFamily="Brush Script MT" TextWrapping="Wrap" IsHitTestVisible="False" Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>
