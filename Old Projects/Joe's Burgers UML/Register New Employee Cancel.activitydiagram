@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="aa1de0d7-600d-4740-acb3-4f5cd2d49804" name="Register New Employee Cancel" linkedPackageId="b67ce079-2901-4f8f-8b11-4409a1c2b4f6" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="95ffec52-72fe-4ea6-aec8-b8234714ebae">
+      <profileInstance Id="ed997014-df99-4109-adcf-4727aba9e26c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="95aeeb98-d95a-4a26-9956-732bbd6d3a0a">
+      <profileInstance Id="1ca11d2a-38d6-4e6c-9723-ab2d2369f4f8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="f265c6f4-29a4-4d61-923f-e2153f39342c" name="Register New Employee Cancel" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="466b6e14-8b1f-4be5-acf3-4f364d5c7a2d" />
+        <nodes>
+          <initialNode Id="81c9ed06-3f69-4bca-96fe-c6c9a211b287" name="Initial1" isLeaf="false">
+            <elementDefinition Id="4333c51f-c90f-4173-aff4-fca2f4979122" />
+            <flowNodeTargets>
+              <controlFlow Id="0a8b423a-1058-4d95-a86a-d492eefe7af3" isLeaf="false">
+                <opaqueActionMoniker Id="6cca8454-3fe9-4681-8691-be3e6324e9fb" LastKnownName="Click Register New User Button" />
+                <elementDefinition Id="00ce6934-d8eb-4ae8-b16c-a1db8aec15be" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="6cca8454-3fe9-4681-8691-be3e6324e9fb" name="Click Register New User Button" isLeaf="false">
+            <elementDefinition Id="405c5f67-3a66-4e52-a266-43a0e7014ca9" />
+            <flowNodeTargets>
+              <controlFlow Id="9f83c227-a9db-49d3-a05c-9a9844369142" isLeaf="false">
+                <opaqueActionMoniker Id="ddf8dfb5-d431-481d-acc8-2d83a233e9c0" LastKnownName="Enter User Information" />
+                <elementDefinition Id="4923e865-a846-489d-b9a7-50c5cac523ff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a6ba8d90-6dd5-4442-a782-86c15d76e340" name="Press Back Arrow Button" isLeaf="false">
+            <elementDefinition Id="8bc46b0a-8a1e-48e2-8549-8f7f72d5780a" />
+            <flowNodeTargets>
+              <controlFlow Id="4ce3daa2-9904-4aa1-993f-5848d9bbc129" isLeaf="false">
+                <opaqueActionMoniker Id="f4a7168b-f7ef-46cb-aa5d-f4a09705d9c7" LastKnownName="Go back to Main Page" />
+                <elementDefinition Id="0c146ee1-f4e2-4265-a0af-ec2e487c0911" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ddf8dfb5-d431-481d-acc8-2d83a233e9c0" name="Enter User Information" isLeaf="false">
+            <elementDefinition Id="de736dd9-6ac5-41b9-896c-3b0eb6ca7a0b" />
+            <flowNodeTargets>
+              <controlFlow Id="42b539cf-4389-4075-8797-83922d1cf7fe" isLeaf="false">
+                <opaqueActionMoniker Id="a6ba8d90-6dd5-4442-a782-86c15d76e340" LastKnownName="Press Back Arrow Button" />
+                <elementDefinition Id="f80ac1f7-74b6-4bb2-b8bb-b327e3eb0b35" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f4a7168b-f7ef-46cb-aa5d-f4a09705d9c7" name="Go back to Main Page" isLeaf="false">
+            <elementDefinition Id="57e8ffa1-a4fb-4e7f-98b9-760154ff19b2" />
+            <flowNodeTargets>
+              <controlFlow Id="7057e158-3fea-40f6-ab3b-7b2c3212c45a" isLeaf="false">
+                <activityFinalNodeMoniker Id="522a2dea-6a20-46a0-be94-37e8451528f2" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a864fc75-b5e8-49fd-be2f-1ad039099ddd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="522a2dea-6a20-46a0-be94-37e8451528f2" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="13b8894b-a2ae-4515-a49c-80a0d3726522" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="b67ce079-2901-4f8f-8b11-4409a1c2b4f6" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0fdcb5ca-4f43-4036-ad3a-8711af1d1bc4" name="Go to Table Layout Menu" linkedPackageId="0920c138-2773-44dc-a9df-59142fbc88a3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7a3e3689-0c4f-41b3-8ad9-c784a3768865">
+      <profileInstance Id="94295d0c-3d13-4fa1-9ace-59647add4296" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="bb4f8043-9640-4610-a9e7-6983e1c4ab8d">
+      <profileInstance Id="1c586e03-3c5c-4e7b-941c-b7524592fbf6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="30cafde1-c429-4e4a-93fe-7200a5dbba95" name="Go to Table Layout Menu" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ba647447-f573-4d40-a0ad-330c4131862e" />
+        <nodes>
+          <initialNode Id="da2d117c-d3a8-486e-9863-decaee95ef38" name="Initial1" isLeaf="false">
+            <elementDefinition Id="7a69e65e-cb5d-40c0-a62f-b8d06fb9ae6d" />
+            <flowNodeTargets>
+              <controlFlow Id="e2ed95d2-cf11-4e33-92c0-5e44345a04b2" isLeaf="false">
+                <opaqueActionMoniker Id="b0fac061-164e-454c-9a80-a0fed2a654b8" LastKnownName="Go to Table Layout Page" />
+                <elementDefinition Id="b26f901c-3a85-4200-b533-ec1d97e4bdb3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="b0fac061-164e-454c-9a80-a0fed2a654b8" name="Go to Table Layout Page" isLeaf="false">
+            <elementDefinition Id="2249b796-f61d-494e-93a2-df0372794adc" />
+            <flowNodeTargets>
+              <controlFlow Id="4fd7cfdf-8988-4fd8-a28a-3eb1aa23bc87" isLeaf="false">
+                <opaqueActionMoniker Id="d8826a65-a496-44e5-815d-9fc4f5da9e86" LastKnownName="Log into Program" />
+                <elementDefinition Id="e2e9d7f7-37a3-4f67-b677-a8c4c9140994" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d8826a65-a496-44e5-815d-9fc4f5da9e86" name="Log into Program" isLeaf="false">
+            <elementDefinition Id="0897de53-6be0-4cb2-b8f9-0145764dd830" />
+            <flowNodeTargets>
+              <controlFlow Id="1f455f28-941b-4556-a309-3a491ea211ca" isLeaf="false">
+                <opaqueActionMoniker Id="21ffdf1a-25dc-4be8-a9bf-48c82553195b" LastKnownName="Go to Two Button Menu" />
+                <elementDefinition Id="f820d6c7-3f12-4fe8-a57a-0f6395723ddd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="21ffdf1a-25dc-4be8-a9bf-48c82553195b" name="Go to Two Button Menu" isLeaf="false">
+            <elementDefinition Id="65dada85-c080-4f67-a2d8-73152569e6c2" />
+            <flowNodeTargets>
+              <controlFlow Id="1c2f28bc-ec01-4c77-93f7-06b5d7d357dc" isLeaf="false">
+                <opaqueActionMoniker Id="7abb4577-ac29-413f-9ad8-a877ad52a9a3" LastKnownName="Click Dine In" />
+                <elementDefinition Id="183d580c-c808-4af0-aab6-e9a17d6b0063" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7abb4577-ac29-413f-9ad8-a877ad52a9a3" name="Click Dine In" isLeaf="false">
+            <elementDefinition Id="d54df104-8440-440e-94a2-28fcbbf1223f" />
+            <flowNodeTargets>
+              <controlFlow Id="82d712a3-a619-495c-9a4c-78e4676a4b8f" isLeaf="false">
+                <opaqueActionMoniker Id="fa2e5d36-3f40-4c21-9717-25b0c72c804a" LastKnownName="Go To Table Layout Page" />
+                <elementDefinition Id="a6e81b8e-c60c-444e-bc2e-435db335d571" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fa2e5d36-3f40-4c21-9717-25b0c72c804a" name="Go To Table Layout Page" isLeaf="false">
+            <elementDefinition Id="3c6f28c0-486c-4ab4-b219-4fafea5ae855" />
+            <flowNodeTargets>
+              <controlFlow Id="69e9a95e-dc99-4541-af24-70045bfe92f7" isLeaf="false">
+                <activityFinalNodeMoniker Id="1d4e1fdb-5f35-489c-a153-2d1b0fed87c4" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="9dabc15c-d1fc-42bf-8584-39136d6672d8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="1d4e1fdb-5f35-489c-a153-2d1b0fed87c4" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="9eaa9a44-393d-4eab-9932-2508ba412546" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="0920c138-2773-44dc-a9df-59142fbc88a3" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>

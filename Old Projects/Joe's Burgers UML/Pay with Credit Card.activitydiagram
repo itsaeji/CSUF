@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="964fb9d1-7c55-4a33-b62d-92f3522111c3" name="Pay with Credit Card" linkedPackageId="9703c40f-cd96-4a41-afd8-e881d1676315" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="b1448a00-f6e8-4128-bf20-21f0518e23f2">
+      <profileInstance Id="e9e7296d-01ce-48ee-b529-74f4aa3f34ac" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6cca7498-52b2-475a-9b3c-e4ae26a758e3">
+      <profileInstance Id="b391458c-206a-4e18-94bc-a15b132f16a5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1441fe6e-6473-428f-a1aa-afb4c4a41306" name="Pay with Credit Card" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f0f8756f-ba06-4dee-a30b-bc14101feb63" />
+        <nodes>
+          <initialNode Id="882841f8-54b9-4b46-813e-647d911756b5" name="Initial1" isLeaf="false">
+            <elementDefinition Id="9700dc44-e2ca-4324-9d92-f604ffe15ed4" />
+            <flowNodeTargets>
+              <controlFlow Id="5202903d-507a-4330-8a9b-f266c80088a9" isLeaf="false">
+                <opaqueActionMoniker Id="b8d0e1b6-c04f-4e85-b736-e123f583ea76" LastKnownName="Pay with Credit Card" />
+                <elementDefinition Id="0fb147ab-138b-4c8c-9b08-efaee6cf3c2f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="b8d0e1b6-c04f-4e85-b736-e123f583ea76" name="Pay with Credit Card" isLeaf="false">
+            <elementDefinition Id="539d3772-bc5f-405d-b522-45882f2edfbd" />
+            <flowNodeTargets>
+              <controlFlow Id="602bab0a-b671-4317-b878-b30780944f2b" isLeaf="false">
+                <opaqueActionMoniker Id="5ffcd101-afbe-4eee-8320-73be4ab107d3" LastKnownName="Go to Checkout Menu" />
+                <elementDefinition Id="25a32c36-44b6-40a0-a2b9-10e5277c0b05" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5ffcd101-afbe-4eee-8320-73be4ab107d3" name="Go to Checkout Menu" isLeaf="false">
+            <elementDefinition Id="03f6de0b-075d-4d93-933b-2f9c9bc5f286" />
+            <flowNodeTargets>
+              <controlFlow Id="55d0f872-da08-465d-9f86-75dd007da48f" isLeaf="false">
+                <opaqueActionMoniker Id="9c05a4cd-c666-4489-b9eb-86d8bffbff55" LastKnownName="Click Credit Card Button" />
+                <elementDefinition Id="a7c9300e-1618-4fbd-badc-1aa872c9febb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9c05a4cd-c666-4489-b9eb-86d8bffbff55" name="Click Credit Card Button" isLeaf="false">
+            <elementDefinition Id="ba7dfb8c-9483-496b-91d0-e2ad9c6d9a51" />
+            <flowNodeTargets>
+              <controlFlow Id="6d179b41-2a5c-4d9b-b10a-f07f05414dd2" isLeaf="false">
+                <opaqueActionMoniker Id="74d32286-3690-4d12-986b-2822c7fc2656" LastKnownName="Amount is less than total" />
+                <elementDefinition Id="1e4d91a3-d64f-4317-911e-422e008d12f2" />
+              </controlFlow>
+              <controlFlow Id="20695bf4-ba3b-4115-9adf-8c338beabdb8" isLeaf="false">
+                <opaqueActionMoniker Id="1030fac0-e2bc-453e-b8d9-dabaa7319c9a" LastKnownName="Amount is equal to total" />
+                <elementDefinition Id="39348aec-d12e-4d58-8412-ec636251075b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="74d32286-3690-4d12-986b-2822c7fc2656" name="Amount is less than total" isLeaf="false">
+            <elementDefinition Id="7c68af22-45af-43ab-83ae-ce77ae68e734" />
+            <flowNodeTargets>
+              <controlFlow Id="1fbe7b48-4423-4861-9d88-2183691d3f36" isLeaf="false">
+                <opaqueActionMoniker Id="029ebe14-d70e-43d1-a9a8-61c8c2a57904" LastKnownName="Amount is deducted from total" />
+                <elementDefinition Id="2964a889-7f2c-45ee-a947-5a4b50e81267" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1030fac0-e2bc-453e-b8d9-dabaa7319c9a" name="Amount is equal to total" isLeaf="false">
+            <elementDefinition Id="98e9434a-8281-44da-ba89-f0b37601d60c" />
+            <flowNodeTargets>
+              <controlFlow Id="fa4e927a-074e-439d-bca9-6a2aa31a05de" isLeaf="false">
+                <opaqueActionMoniker Id="b83ae2fc-67d9-4448-ada9-2d5f49aed17b" LastKnownName="Transaction is complete" />
+                <elementDefinition Id="e6740f24-8f4c-4a03-9f5b-360ac0992cce" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="029ebe14-d70e-43d1-a9a8-61c8c2a57904" name="Amount is deducted from total" isLeaf="false">
+            <elementDefinition Id="1b54f243-2798-40c0-a14f-d5d78ce48c7b" />
+            <flowNodeTargets>
+              <controlFlow Id="ccd5bb59-43b9-4bb5-acd9-f5d6d4bc50bc" isLeaf="false">
+                <activityFinalNodeMoniker Id="6a55dd19-7c6c-427f-9c6b-a49db251c738" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="c2dfb9f6-7542-4bd9-a8f4-1d5379e19189" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b83ae2fc-67d9-4448-ada9-2d5f49aed17b" name="Transaction is complete" isLeaf="false">
+            <elementDefinition Id="6d1b1405-5eac-4403-ac3b-8668fe9bae28" />
+            <flowNodeTargets>
+              <controlFlow Id="967e2042-638d-408b-a8a2-dfe64d35c96e" isLeaf="false">
+                <activityFinalNodeMoniker Id="6a55dd19-7c6c-427f-9c6b-a49db251c738" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="b6209582-074a-4063-988d-af0f54fb0fdd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="6a55dd19-7c6c-427f-9c6b-a49db251c738" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a928090b-cba9-4e17-b497-e1be33318b6b" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="9703c40f-cd96-4a41-afd8-e881d1676315" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>

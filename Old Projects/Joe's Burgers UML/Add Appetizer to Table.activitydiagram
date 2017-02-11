@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c80f2fd4-ef01-4af3-a219-40376cc157af" name="Add Appetizer to Table" linkedPackageId="c13c99c1-0546-464e-877e-8da1d52907af" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="27d373a7-d0d0-4670-bd91-4c11f38fafc4">
+      <profileInstance Id="8c09707e-9a60-4119-9594-f2ac510edcb6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9db589c6-df3e-4bbc-8d82-5e52da4414e2">
+      <profileInstance Id="afd8ffef-e0ac-469e-96e4-6b0dc8acc14c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="ec93af16-f419-48d0-a64e-b1cf1d7a68a3" name="Add Appetizer to Table" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="b1c7db32-c51b-4120-898d-32d6454f0434" />
+        <nodes>
+          <initialNode Id="3b864694-2898-4cbf-b744-801b3ab665b7" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e725de07-9978-4bd8-8171-122126ede3e5" />
+            <flowNodeTargets>
+              <controlFlow Id="a2ce70ff-15e6-442c-8425-28a8e104afb3" isLeaf="false">
+                <opaqueActionMoniker Id="a2169fba-3fd3-4718-82d0-415eabf8c5ee" LastKnownName="Add Appetizer To Table" />
+                <elementDefinition Id="d302e130-d23e-4b02-96f4-2636f078a643" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="a2169fba-3fd3-4718-82d0-415eabf8c5ee" name="Add Appetizer To Table" isLeaf="false">
+            <elementDefinition Id="7a00963d-d7ab-43a2-ab74-0646fc7b2869" />
+            <flowNodeTargets>
+              <controlFlow Id="0a143cce-052e-47fa-ab17-a9fd8b962118" isLeaf="false">
+                <opaqueActionMoniker Id="6be2d929-2333-443b-8d85-1a0115fe0b6f" LastKnownName="Click Table with desired Number" />
+                <elementDefinition Id="7a2e5b3d-55dc-4184-af98-029dd4ac6ed8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6be2d929-2333-443b-8d85-1a0115fe0b6f" name="Click Table with desired Number" isLeaf="false">
+            <elementDefinition Id="814e5e8e-358d-470b-83d7-6e9ceafe73e9" />
+            <flowNodeTargets>
+              <controlFlow Id="9762adb0-7e0c-45c8-b45d-1647ef09b66b" isLeaf="false">
+                <opaqueActionMoniker Id="fbf24c98-06ce-47ea-aee0-e444dc2fd90e" LastKnownName="Go To Appetizer Menu" />
+                <elementDefinition Id="a9603637-7cc8-4e6c-97fc-f15aecf424a6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="fbf24c98-06ce-47ea-aee0-e444dc2fd90e" name="Go To Appetizer Menu" isLeaf="false">
+            <elementDefinition Id="ba5f7afa-7785-4dd6-8ed0-2a5303f34f91" />
+            <flowNodeTargets>
+              <controlFlow Id="9c828db7-d63c-4040-94aa-82f1d75badc1" isLeaf="false">
+                <opaqueActionMoniker Id="44988e22-cd66-4b58-9fa0-4f5f33de9b62" LastKnownName="Click Appetizer Button" />
+                <elementDefinition Id="08b0af65-c41c-4cd9-a77c-d706c7420ca4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="44988e22-cd66-4b58-9fa0-4f5f33de9b62" name="Click Appetizer Button" isLeaf="false">
+            <elementDefinition Id="8cf0afa2-67e8-46fd-9318-1ceae2c67743" />
+            <flowNodeTargets>
+              <controlFlow Id="a71fdfc8-63c9-4d52-bf7c-32dc19bdc464" isLeaf="false">
+                <opaqueActionMoniker Id="b9d17eb9-a5e1-43d8-afa9-9b3ac199338a" LastKnownName="Appetizer Menu Appears in Frame" />
+                <elementDefinition Id="c2156277-c8eb-40e4-be0b-2ca5916885c3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b9d17eb9-a5e1-43d8-afa9-9b3ac199338a" name="Appetizer Menu Appears in Frame" isLeaf="false">
+            <elementDefinition Id="3e80fd37-cb6d-4ae7-a9ea-9dd53bf06788" />
+            <flowNodeTargets>
+              <controlFlow Id="b23d99ec-e395-4aff-9a8c-7c9c8eb3280f" isLeaf="false">
+                <opaqueActionMoniker Id="500eb900-2afa-4d0f-9af0-f280c8068af6" LastKnownName="Click Desired Appetizer" />
+                <elementDefinition Id="3f8e54c9-d46c-493f-96c3-1be3905702b0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="500eb900-2afa-4d0f-9af0-f280c8068af6" name="Click Desired Appetizer" isLeaf="false">
+            <elementDefinition Id="8ab5813c-8ca1-48b8-b8d8-5e6e2a37a9b0" />
+            <flowNodeTargets>
+              <controlFlow Id="a2feaa9b-6e97-4845-8a19-c528055efb25" isLeaf="false">
+                <opaqueActionMoniker Id="85a98862-8c8b-4f84-b7bd-1b4deac7e2ce" LastKnownName="Appetizer is added to Table" />
+                <elementDefinition Id="18d46ff2-3d8b-483a-aea9-9b0e6a36e6d2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="85a98862-8c8b-4f84-b7bd-1b4deac7e2ce" name="Appetizer is added to Table" isLeaf="false">
+            <elementDefinition Id="eb1781a8-2645-401a-af8f-2339773850cd" />
+            <flowNodeTargets>
+              <controlFlow Id="061fa65d-fc7c-4218-b245-8d1f58a9522a" isLeaf="false">
+                <activityFinalNodeMoniker Id="777773b5-18a2-4a1c-8add-b7e101c37080" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="8406ed36-998f-457e-96d3-1006d91adde5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="777773b5-18a2-4a1c-8add-b7e101c37080" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="98f83a05-fdd8-47d3-a3cc-bb0424d33118" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="c13c99c1-0546-464e-877e-8da1d52907af" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>

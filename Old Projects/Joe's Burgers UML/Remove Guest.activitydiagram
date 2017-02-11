@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="d3411f43-0b64-42c7-91f7-0e017881b665" name="Remove Guest" linkedPackageId="7f14801f-e72e-45ab-9e6e-1610f38c1575" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e2ba10df-bcae-4dc8-996d-37cd391cc997">
+      <profileInstance Id="a6888b13-4b75-484b-bc20-5d569d11e1fa" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e17d411e-4945-453a-87be-9a60a17aba61">
+      <profileInstance Id="e992c41d-f7f1-48be-aaf6-698c8f108f23" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="64719392-3995-4bf5-9e86-5fad38b8222a" name="Remove Guest" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="25bc490f-3b7e-4fd0-a5c6-21678c936438" />
+        <nodes>
+          <initialNode Id="8a59ad87-1299-40db-bcda-e6efde2780e0" name="Initial1" isLeaf="false">
+            <elementDefinition Id="bea001c2-6975-4edb-83ad-0d34c7f347dd" />
+            <flowNodeTargets>
+              <controlFlow Id="2d629828-b525-4ac8-8313-dfdf97dd6c97" isLeaf="false">
+                <opaqueActionMoniker Id="6fcf80c2-36e6-4613-8ae6-9e545b630d9a" LastKnownName="Remove Guest" />
+                <elementDefinition Id="03b00ba6-d8ec-408c-a879-0583cc8443d6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="99cbf403-5611-485c-a3c3-78bb6da5225b" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="92e27a42-ff30-40e5-abb7-b36374371188" />
+          </activityFinalNode>
+          <opaqueAction Id="6fcf80c2-36e6-4613-8ae6-9e545b630d9a" name="Remove Guest" isLeaf="false">
+            <elementDefinition Id="00ffa3e7-8964-4075-8b5e-8ec92a918d9d" />
+            <flowNodeTargets>
+              <controlFlow Id="50f43e4e-a4cf-4418-b938-118070f2f2cb" isLeaf="false">
+                <opaqueActionMoniker Id="d2ec49c9-86b8-43fb-9ba3-ce6855ffda3f" LastKnownName="Go to food menu" />
+                <elementDefinition Id="6be061c5-7267-4d73-a8a0-c8e6bcb0bc5f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d2ec49c9-86b8-43fb-9ba3-ce6855ffda3f" name="Go to food menu" isLeaf="false">
+            <elementDefinition Id="0fed7229-5248-4514-bc31-c199127f164f" />
+            <flowNodeTargets>
+              <controlFlow Id="a631bdd1-2e04-4e16-ac85-2d75966784d3" isLeaf="false">
+                <opaqueActionMoniker Id="ed6b3712-69db-4284-af65-037be0698a0d" LastKnownName="Click Remove Guest button" />
+                <elementDefinition Id="0e37726d-3e9a-4365-bc02-d31871fd1484" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ed6b3712-69db-4284-af65-037be0698a0d" name="Click Remove Guest button" isLeaf="false">
+            <elementDefinition Id="8ed51b4d-81d5-4ce2-bc41-bfee045a0a09" />
+            <flowNodeTargets>
+              <controlFlow Id="c50368ad-2dca-4268-a7a2-6fb46e3f1542" isLeaf="false">
+                <opaqueActionMoniker Id="388819d7-de4d-4ab6-bb67-d530687a1640" LastKnownName="Guest is removed from the current table" />
+                <elementDefinition Id="8e3d8e0d-81c3-4fa5-a9a7-e51e1156fe42" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="388819d7-de4d-4ab6-bb67-d530687a1640" name="Guest is removed from the current table" isLeaf="false">
+            <elementDefinition Id="873e3cbf-51be-4de9-b6cf-438e14716619" />
+            <flowNodeTargets>
+              <controlFlow Id="63ecbabc-10cf-4fa6-8158-a744ee56fbc2" isLeaf="false">
+                <activityFinalNodeMoniker Id="99cbf403-5611-485c-a3c3-78bb6da5225b" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="24668c04-9585-44d6-b1b4-9f9a5ac575a0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="7f14801f-e72e-45ab-9e6e-1610f38c1575" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Split evenly">
+  <activityRootModelMoniker Id="c033f0aa-3585-4b7f-807a-bf57efe80422" />
+  <nestedChildShapes>
+    <initialNodeShape Id="20ee8f30-92f3-4c68-9f93-cdb59333bb30" absoluteBounds="6.125, 0.5, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="434c7802-aef6-4119-8405-6c6581ff5481" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="3a4e231b-f5fa-4852-a424-1867da8cae63" absoluteBounds="5.625, 1.125, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="3a75d7e7-c81d-45f9-a7a2-7f92a66410f3" LastKnownName="Split Evenly" />
+    </actionShape>
+    <actionShape Id="df2fcb44-98cf-4386-902d-0e91898eea6e" absoluteBounds="7.25, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="49fd1165-7723-435c-b68e-cf4b1c8fefcb" LastKnownName="Go to checkout Menu" />
+    </actionShape>
+    <actionShape Id="fa685d70-70ee-4f4a-9867-6faf6374724c" absoluteBounds="7.25, 1.125, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="0f2a2984-fed6-40cf-8f74-76fe0708ede0" LastKnownName="Add items to order" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(6.1875 : 0.625); (6.1875 : 1.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="a7038b61-12b1-4e60-8027-409b775dacb4" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="20ee8f30-92f3-4c68-9f93-cdb59333bb30" />
+        <actionShapeMoniker Id="3a4e231b-f5fa-4852-a424-1867da8cae63" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(6.75 : 1.3125); (7.25 : 1.3125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="8db4234c-4a14-4a7e-aecc-f15a4fdb8322" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="3a4e231b-f5fa-4852-a424-1867da8cae63" />
+        <actionShapeMoniker Id="fa685d70-70ee-4f4a-9867-6faf6374724c" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(7.8125 : 1.5); (7.8125 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="b824de4d-cd7f-42b0-ac5b-4d03dc6688ff" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="fa685d70-70ee-4f4a-9867-6faf6374724c" />
+        <actionShapeMoniker Id="df2fcb44-98cf-4386-902d-0e91898eea6e" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="1d1d6111-7e26-4fc0-a308-212314e85bc9" absoluteBounds="5.625, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="5da02a36-9853-4a8c-b507-b9fade970414" LastKnownName="click split evenly button" />
+    </actionShape>
+    <actionShape Id="f69cd9e7-f30d-4873-9d04-6770b0a1704e" absoluteBounds="5.625, 3, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="9229f898-1404-4955-9f5e-52a80cb8d7a2" LastKnownName="Number flyout pops up" />
+    </actionShape>
+    <actionShape Id="b9937b84-cde5-405c-813a-85c6d7a5f6f5" absoluteBounds="7.25, 3, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="4bc0021a-8f3b-40a6-a7bf-440203c6d8e3" LastKnownName="Choose number to split by" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(6.1875 : 2.375); (6.1875 : 3)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="23b9feff-c4a8-4080-8538-fb340a4ef2ff" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="1d1d6111-7e26-4fc0-a308-212314e85bc9" />
+        <actionShapeMoniker Id="f69cd9e7-f30d-4873-9d04-6770b0a1704e" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(6.75 : 3.1875); (7.25 : 3.1875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="5c6fdc1e-9559-4feb-9eaf-cd0375fb1c44" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="f69cd9e7-f30d-4873-9d04-6770b0a1704e" />
+        <actionShapeMoniker Id="b9937b84-cde5-405c-813a-85c6d7a5f6f5" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(7.25 : 2.1875); (6.75 : 2.1875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="1de0d3bd-cd14-43a5-9f08-cf4b207ea3b4" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="df2fcb44-98cf-4386-902d-0e91898eea6e" />
+        <actionShapeMoniker Id="1d1d6111-7e26-4fc0-a308-212314e85bc9" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="9d15af07-95d2-48e5-9753-a958f530cb01" absoluteBounds="7.25, 4, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="2ee66da1-7e44-494b-ba7b-8780527d7344" LastKnownName="Press OK Button" />
+    </actionShape>
+    <actionShape Id="b3f64298-6174-404b-ad08-1df90ab0fa02" absoluteBounds="5.625, 4, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="37a81e68-a513-4efa-9f0d-b13fd0c0201a" LastKnownName="Split by number selected" />
+    </actionShape>
+    <activityFinalNodeShape Id="b263e348-3095-4ddc-aad9-50823fb9fb26" absoluteBounds="6.125, 5.125, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="770e24ae-67a4-4a4f-a808-f9e35952ada7" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <controlFlowConnector edgePoints="[(7.8125 : 3.375); (7.8125 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="f0f39382-4701-454f-8cf3-123bdae6429e" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="b9937b84-cde5-405c-813a-85c6d7a5f6f5" />
+        <actionShapeMoniker Id="9d15af07-95d2-48e5-9753-a958f530cb01" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(7.25 : 4.1875); (6.75 : 4.1875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="5176a598-053c-4e4e-a8f1-d6d6adbbda66" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="9d15af07-95d2-48e5-9753-a958f530cb01" />
+        <actionShapeMoniker Id="b3f64298-6174-404b-ad08-1df90ab0fa02" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(6.1875 : 4.375); (6.1875 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="4b1120b2-7804-41ae-97eb-bda458a89eb4" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="b3f64298-6174-404b-ad08-1df90ab0fa02" />
+        <activityFinalNodeShapeMoniker Id="b263e348-3095-4ddc-aad9-50823fb9fb26" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AddGuest">
+  <activityRootModelMoniker Id="195bbf7b-6a73-4641-beaf-c035ce79bd1d" />
+  <nestedChildShapes>
+    <initialNodeShape Id="dd4e51ec-4f65-4e62-8252-b969454a309f" absoluteBounds="6.5, 0.5, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="f6dc06e6-5634-4f61-9dfd-16a8dd0125b7" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <activityFinalNodeShape Id="51551d0f-a4c7-4fc3-b7a5-562e4379e91b" absoluteBounds="6.5, 3.125, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="eb2e456f-1910-4332-8d14-1103708302f2" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <actionShape Id="dcded0d6-ecc0-439c-9902-2f1c401d8c27" absoluteBounds="6, 1.125, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="a222abb5-d603-4e85-bec5-3fcd566c4708" LastKnownName="Add Guest" />
+    </actionShape>
+    <actionShape Id="621fcbdb-ad77-4e23-8cdd-fb5cda1e22b7" absoluteBounds="7.75, 1.125, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="709502da-01fc-42c0-97a0-254eac67dc23" LastKnownName="Go to food menu" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(6.5625 : 0.625); (6.5625 : 1.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="99313e13-cfd6-45cf-a532-76e4c13f27c8" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="dd4e51ec-4f65-4e62-8252-b969454a309f" />
+        <actionShapeMoniker Id="dcded0d6-ecc0-439c-9902-2f1c401d8c27" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(7.125 : 1.3125); (7.75 : 1.3125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="d6294c7d-f5ce-449d-bf23-eaed9add7ab2" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="dcded0d6-ecc0-439c-9902-2f1c401d8c27" />
+        <actionShapeMoniker Id="621fcbdb-ad77-4e23-8cdd-fb5cda1e22b7" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="4f4ca9e3-627d-4e29-b022-461bac8c4d09" absoluteBounds="7.75, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="338fa9f1-956d-4005-8499-167bf144566b" LastKnownName="Click Add Guest button" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(8.3125 : 1.5); (8.3125 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="8007eb66-efa3-4525-b4d3-4e7f749002b9" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="621fcbdb-ad77-4e23-8cdd-fb5cda1e22b7" />
+        <actionShapeMoniker Id="4f4ca9e3-627d-4e29-b022-461bac8c4d09" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="1387382d-ba1f-4c5f-b48d-67527ed8ebab" absoluteBounds="6, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="befcb8d1-541c-43e0-9914-ae769486409f" LastKnownName="Guest is added to the current table" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(6.5625 : 2.375); (6.5625 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="9251656c-4b17-4a09-8cae-795c9640260a" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="1387382d-ba1f-4c5f-b48d-67527ed8ebab" />
+        <activityFinalNodeShapeMoniker Id="51551d0f-a4c7-4fc3-b7a5-562e4379e91b" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(7.75 : 2.1875); (7.125 : 2.1875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="c48c3c4d-ae71-45f1-9918-90383e033cfb" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="4f4ca9e3-627d-4e29-b022-461bac8c4d09" />
+        <actionShapeMoniker Id="1387382d-ba1f-4c5f-b48d-67527ed8ebab" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

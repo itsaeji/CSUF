@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e167ffc7-c7f9-4a47-8a39-5fa64d5b87e1" name="Split by order" linkedPackageId="5f860e26-9795-4892-9dc3-9ee0aadcd35f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3ee3c18d-a958-47ab-a396-ad5d9afdc574">
+      <profileInstance Id="768343f0-f5f5-418a-ac77-5173d7c9a2d6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b7a307bf-be89-4d52-8b8e-7a7835271fbb">
+      <profileInstance Id="54078f6d-907d-43d8-86a4-df3c85391c8f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="6475c634-7bce-41e2-afdd-869244082684" name="Split by order" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="3a5242bf-853e-4b91-80a4-51809c541aa7" />
+        <nodes>
+          <initialNode Id="91c680e3-1ff4-48a7-8f9f-3aa9288439e0" name="Initial11" isLeaf="false">
+            <elementDefinition Id="79476ee7-d643-47d0-9222-07a9c6ddf06d" />
+            <flowNodeTargets>
+              <controlFlow Id="aeeada22-b26a-4376-95d6-4564053c9def" isLeaf="false">
+                <opaqueActionMoniker Id="38332f5f-451b-4ea0-b477-cd87ff72a206" LastKnownName="Split by Order" />
+                <elementDefinition Id="26ff903d-5b4d-42c5-bc97-2f585b921561" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="38332f5f-451b-4ea0-b477-cd87ff72a206" name="Split by Order" isLeaf="false">
+            <elementDefinition Id="2f97b302-a7e8-497b-bb5f-d60763a55d64" />
+            <flowNodeTargets>
+              <controlFlow Id="aef087c8-da2a-49cf-bc7d-a2b1b4d4f4eb" isLeaf="false">
+                <opaqueActionMoniker Id="1163ee06-19e0-44e1-b039-e2e4613ba689" LastKnownName="Add items to order" />
+                <elementDefinition Id="50e68bd1-9b53-4fed-915d-06185d213e3a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="93de8648-344e-42f6-86e4-f91917aeffa2" name="Go to checkout Menu" isLeaf="false">
+            <elementDefinition Id="ea834b20-82e7-413e-b2cd-df7c8d8b6699" />
+            <flowNodeTargets>
+              <controlFlow Id="3002715a-fafe-413b-a43f-1e70175ecf04" isLeaf="false">
+                <opaqueActionMoniker Id="20162765-e567-409b-bc1b-568346035d07" LastKnownName="Click Split by &#xD;&#xA;Order Button" />
+                <elementDefinition Id="b01dbba7-9f70-4f46-9e0f-3d4971e024c2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1163ee06-19e0-44e1-b039-e2e4613ba689" name="Add items to order" isLeaf="false">
+            <elementDefinition Id="285eba3d-1be5-4eb9-9066-74470fdbed5f" />
+            <flowNodeTargets>
+              <controlFlow Id="0d122e47-b40c-4ed9-94f1-6b5432a82adb" isLeaf="false">
+                <opaqueActionMoniker Id="93de8648-344e-42f6-86e4-f91917aeffa2" LastKnownName="Go to checkout Menu" />
+                <elementDefinition Id="325d8e7d-a39f-46ef-a2cf-ac90be2b169d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="20162765-e567-409b-bc1b-568346035d07" name="Click Split by &#xD;&#xA;Order Button" isLeaf="false">
+            <elementDefinition Id="4009d4f9-41bc-44ff-9dca-30a2344a66c8" />
+            <flowNodeTargets>
+              <controlFlow Id="9fef84ff-e61a-43d0-8f0e-1e56333b7ff3" isLeaf="false">
+                <opaqueActionMoniker Id="5d2ccea9-7f71-49d8-b154-d17b16a9739d" LastKnownName="???" />
+                <elementDefinition Id="e94112a3-a9d2-4d7c-9f69-8978b783a3bd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5d2ccea9-7f71-49d8-b154-d17b16a9739d" name="???" isLeaf="false">
+            <elementDefinition Id="60c6aef5-60e4-4532-8e5d-de9b5b04ad6a" />
+            <flowNodeTargets>
+              <controlFlow Id="0a0fa325-51ed-43db-ae20-fd770fb30eff" isLeaf="false">
+                <opaqueActionMoniker Id="cb3711f6-b7a9-4264-b66f-4c9c009ca013" LastKnownName="???" />
+                <elementDefinition Id="750b764f-7cb9-4e44-8d2a-2168c74ddafd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cb3711f6-b7a9-4264-b66f-4c9c009ca013" name="???" isLeaf="false">
+            <elementDefinition Id="035b6710-68f7-49d2-af82-777010e8e2c7" />
+            <flowNodeTargets>
+              <controlFlow Id="a56128e9-7dd5-4181-8f1e-8da39764f057" isLeaf="false">
+                <opaqueActionMoniker Id="19ae2c3a-ee2b-4383-bbe8-b28a4dab1737" LastKnownName="Press OK Button" />
+                <elementDefinition Id="f21bb2ee-ef29-4e5f-bcc7-5599640bf49a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="19ae2c3a-ee2b-4383-bbe8-b28a4dab1737" name="Press OK Button" isLeaf="false">
+            <elementDefinition Id="55b07e63-f3d0-4574-959a-320e9b0379be" />
+            <flowNodeTargets>
+              <controlFlow Id="923a17b5-7f4f-4174-adcf-862851bd80da" isLeaf="false">
+                <opaqueActionMoniker Id="48820578-285e-4797-89e6-9540b0a8b6e0" LastKnownName="Split by Order" />
+                <elementDefinition Id="829b8437-09c7-4d41-9400-6d0622dd292a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="48820578-285e-4797-89e6-9540b0a8b6e0" name="Split by Order" isLeaf="false">
+            <elementDefinition Id="787cdd58-9b68-4565-a824-229cd5c4eae8" />
+            <flowNodeTargets>
+              <controlFlow Id="33997be3-1e85-4ec8-9930-3a123b035859" isLeaf="false">
+                <activityFinalNodeMoniker Id="39428dd1-ef09-4c88-a7eb-b4f49c3cc782" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="3736b081-23b8-4d91-b670-3bbd059b411c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="39428dd1-ef09-4c88-a7eb-b4f49c3cc782" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="37edb262-b5b2-4140-b2d8-e44a07b6c971" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="5f860e26-9795-4892-9dc3-9ee0aadcd35f" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>

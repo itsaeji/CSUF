@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d39e500f-5f6b-4c42-916e-3fe16dec5165" name="State Transition Diagram (STD)" linkedPackageId="32095fb3-76eb-443a-bea9-330f7121e8f3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="50fdbc6c-1e56-40d2-b1f3-b73fd0a5537f">
+      <profileInstance Id="4ea7b93c-f6af-4ed6-be24-cb9ac65c9b0e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c3a4483c-f0d0-4101-a337-2d43a189c190">
+      <profileInstance Id="6e3e78b5-c083-4a43-a5f9-4098b914ef3f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="7dbe7666-d891-43d7-a0c5-65b346dd47c8" name="State Transition Diagram (STD)" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="9b507150-68d6-44f2-b3b3-a2d96ba5b132" />
+        <nodes>
+          <initialNode Id="5b4ece8c-21fa-4d8d-8e3a-b109f06eea09" name="Initial1" isLeaf="false">
+            <elementDefinition Id="a2bf80ce-c799-433d-a6e5-26a9ddf08531" />
+            <objectFlowTargets>
+              <objectFlow Id="74d98cbc-f4a9-4ba9-87c2-9118a47adc2b" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="fbb91992-4118-4bb7-a2a7-de92c279ea57" LastKnownName="Login Page" />
+                <elementDefinition Id="7ad4bfd4-ed84-41f8-83f3-f51a8baee4d6" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <objectNode Id="fbb91992-4118-4bb7-a2a7-de92c279ea57" name="Login Page" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="9a5877cc-2c24-4a33-9f80-9d721473fef9" />
+            <objectFlowTargets>
+              <objectFlow Id="99f8b1a6-decf-4c36-bf46-fc30808be24a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="7f14c272-bd0b-406e-933b-30bf2b1508ef" LastKnownName="Click Register New User Button" />
+                <elementDefinition Id="f11adf95-534a-432f-b1b0-5fd037228612" />
+              </objectFlow>
+              <objectFlow Id="a640cd59-2750-44ba-8565-0a3744b6bc54" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="dce4d6b2-3778-423c-b426-4b03aaa61d7c" LastKnownName="Incorrect Login" />
+                <elementDefinition Id="3d39f68e-40d3-4288-9047-86f769be0571" />
+              </objectFlow>
+              <objectFlow Id="4d220f06-041c-46c1-92ad-9b13743b1d57" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="ff543871-16bd-42d5-94d3-d4a89a5aed8b" LastKnownName="Correct Login" />
+                <elementDefinition Id="a962ae6b-0293-46b7-bc08-13eda7106838" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="01426c86-335c-4416-ace5-d0f9828fc5b7" name="2147483647" value="2147483647">
+                <elementDefinition Id="40544c01-d1e2-4d84-9cd5-b01921f52843" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="cb0f357e-18b0-40ad-94b6-d4a33f8af758" name="Add New Employee" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="cf4d2aac-33e6-486b-b338-f91736d2d9b7" />
+            <objectFlowTargets>
+              <objectFlow Id="f2706c6e-c049-43fc-89a2-1b90efa996bd" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="14416ee4-1266-42a2-906d-67d2ded22991" LastKnownName="Submit Information" />
+                <elementDefinition Id="84f33fc3-d8ca-40b8-a1a1-27f2a3c0d1f7" />
+              </objectFlow>
+              <objectFlow Id="103b1820-ffe7-4b38-a7ef-9563da045903" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="9ff9d580-e1b3-44de-9349-0de05b1239e6" LastKnownName="Click Back Button" />
+                <elementDefinition Id="2c5c8f58-d1a9-4aaf-8b51-1302faf6b77a" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="8a48cce0-4c27-4ee4-9181-3c7240613695" name="2147483647" value="2147483647">
+                <elementDefinition Id="0ca0441c-893b-4387-b29e-0fb8ebac7385" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="e1c20ddb-c685-4750-9c1b-4bbf205f4319" name="Carry Out Menu" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="d774bdf4-9cb9-4538-ad9f-a97470d9e7db" />
+            <objectFlowTargets>
+              <objectFlow Id="0ef50812-6e68-4f1d-b231-8af500925d66" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="c9df1cbe-ac00-4e40-8245-542fb770a624" LastKnownName="Click Back Button" />
+                <elementDefinition Id="3dbcda2b-700c-492b-8f09-8c216e9b2004" />
+              </objectFlow>
+              <objectFlow Id="6f24182d-5f97-4322-baa5-187646db516b" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <forkNodeMoniker Id="dd641ecf-4107-419a-a71f-75a035b97b0c" LastKnownName="Fork1" />
+                <elementDefinition Id="9a108989-1b5c-4006-9863-62db4f42c4de" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="3aaba600-e576-4fa1-9100-23aa9868e68b" name="2147483647" value="2147483647">
+                <elementDefinition Id="0a1f9232-601f-4962-83d8-398cb0afc80c" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="965f202a-7ab5-49dd-90d7-4e7481f8db3c" name="Table Layout" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="0815db4d-c545-4ce7-a8af-181ed2b167aa" />
+            <objectFlowTargets>
+              <objectFlow Id="c3bf048a-05e2-491e-8469-ce612184b9fb" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="4b6033ef-166b-4528-b149-ea6d47965c3b" LastKnownName="Click Back Button" />
+                <elementDefinition Id="fcb9e646-3b36-4b32-8344-7d59b399cad2" />
+              </objectFlow>
+              <objectFlow Id="3c0fc087-2c5b-4699-b877-1955366db23a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="7e522501-d1f5-4c2e-9fa3-fb0ad4e16542" LastKnownName="Click Table" />
+                <elementDefinition Id="4bc92343-c5ad-4c20-aecc-c4f3aea097f9" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="3ea08221-7a1d-44ac-8242-02d7a56f1cfc" name="2147483647" value="2147483647">
+                <elementDefinition Id="56b74d54-b146-4b29-b4b4-1e187ceb3761" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="6701513f-0c28-42d4-aaac-0589f11eac39" name="Two Button Menu" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="4a470d25-8ef7-46d5-9eff-4933d687c25c" />
+            <objectFlowTargets>
+              <objectFlow Id="a336460f-0bd5-4bf6-a484-4a1cd8ab418c" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="a4149c14-6ee1-4312-b073-aaa5c36c9aa1" LastKnownName="Click Back Button" />
+                <elementDefinition Id="da0a3fad-38b7-427f-9f21-90ab123071b0" />
+              </objectFlow>
+              <objectFlow Id="ecb1b023-b648-4618-a8e6-43d0d5a04289" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="d6f243b9-7a59-4293-b6f6-6c0f03e56caa" LastKnownName="Click To Go" />
+                <elementDefinition Id="46b464ed-0c10-4295-a930-8f4c90382582" />
+              </objectFlow>
+              <objectFlow Id="1367c292-2e65-4c89-b742-2a66017a10f9" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="e31e0168-a9bb-464f-b35c-a2064b2da93f" LastKnownName="Click Dine In" />
+                <elementDefinition Id="70d77b22-efad-4378-ac5b-1f58dfd5050f" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="20bbff4c-d1e5-43f6-9d1e-381ca77a061c" name="2147483647" value="2147483647">
+                <elementDefinition Id="80ed25e9-9473-4862-9252-d87c73120902" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="7f14c272-bd0b-406e-933b-30bf2b1508ef" name="Click Register New User Button" isLeaf="false">
+            <elementDefinition Id="56fd2ed4-07c8-4e59-a2ba-89cea71a6a2a" />
+            <objectFlowTargets>
+              <objectFlow Id="32309bbc-bb2c-4cef-a6bd-0c8f8d92d3e2" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="cb0f357e-18b0-40ad-94b6-d4a33f8af758" LastKnownName="Add New Employee" />
+                <elementDefinition Id="bdb51d6a-2cd4-4fa9-a450-7f081116ac8f" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="14416ee4-1266-42a2-906d-67d2ded22991" name="Submit Information" isLeaf="false">
+            <elementDefinition Id="1b95ca53-899a-4eb5-8c14-34a07dcafbcf" />
+            <flowNodeTargets>
+              <controlFlow Id="91c3ff8c-f099-4ece-9ea5-d0f2e7293e0c" isLeaf="false">
+                <opaqueActionMoniker Id="cfd81b75-4717-4020-a653-926f5aba7913" LastKnownName="Save User" />
+                <elementDefinition Id="fa6cf674-eaf0-48d0-a1d5-b4c54b0879f6" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="750e85b5-101d-48a5-bf88-201c91a2d50e" name="User Information" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="40888510-07d3-42ee-906d-454de04bb071" />
+                  <upperBound>
+                    <literalInteger Id="dbb089a0-76b5-4cd7-930a-9c8856bda023" name="2147483647" value="2147483647">
+                      <elementDefinition Id="b2a87895-e84c-4649-9a06-7dfa0676f105" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <sendSignalAction Id="44c9edac-5388-46f3-b60d-efcad4a61dd3" name="Username" isLeaf="false">
+            <elementDefinition Id="685d616c-d331-4e61-aedb-8f8897208a29" />
+            <objectFlowTargets>
+              <objectFlow Id="e1ef8e40-7845-41ae-bd8a-31bd20133e51" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="750e85b5-101d-48a5-bf88-201c91a2d50e" LastKnownName="User Information" />
+                <elementDefinition Id="ef0394eb-7189-43bf-ab1f-c82f4cf5d200" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction Id="87bb9bb8-788d-4fb9-945b-20b3aeb3d646" name="Password" isLeaf="false">
+            <elementDefinition Id="fe6166c4-1231-4303-924b-e7f24e74ee79" />
+            <objectFlowTargets>
+              <objectFlow Id="ee839115-8b9c-4cf4-8c58-79cc54de127a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="750e85b5-101d-48a5-bf88-201c91a2d50e" LastKnownName="User Information" />
+                <elementDefinition Id="111e90aa-afea-456a-b6c7-070b55961185" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <opaqueAction Id="cfd81b75-4717-4020-a653-926f5aba7913" name="Save User" isLeaf="false">
+            <elementDefinition Id="4b304745-6ec5-4e22-a719-e2a18e777238" />
+            <objectFlowTargets>
+              <objectFlow Id="50e068e9-f9ad-41bc-8bd8-7246e60b89a7" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="fbb91992-4118-4bb7-a2a7-de92c279ea57" LastKnownName="Login Page" />
+                <elementDefinition Id="5dd5de89-270a-4c96-ba1d-1da9bfec5086" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="dce4d6b2-3778-423c-b426-4b03aaa61d7c" name="Incorrect Login" isLeaf="false">
+            <elementDefinition Id="914ab8db-58aa-413c-a95f-a046b31200ed" />
+            <objectFlowTargets>
+              <objectFlow Id="dd54af07-e0a6-445e-a48f-6897704247c6" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="fbb91992-4118-4bb7-a2a7-de92c279ea57" LastKnownName="Login Page" />
+                <elementDefinition Id="1c8e2013-bb93-4a78-9eeb-9fd7fa1a61a0" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="ff543871-16bd-42d5-94d3-d4a89a5aed8b" name="Correct Login" isLeaf="false">
+            <elementDefinition Id="73330ae0-24a8-4732-8f41-b2321494158a" />
+            <objectFlowTargets>
+              <objectFlow Id="7563e817-6898-4f49-b67e-94c8594774f3" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="6701513f-0c28-42d4-aaac-0589f11eac39" LastKnownName="Two Button Menu" />
+                <elementDefinition Id="81a966a8-0581-4cb8-af55-36d8125af35e" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="e31e0168-a9bb-464f-b35c-a2064b2da93f" name="Click Dine In" isLeaf="false">
+            <elementDefinition Id="91ffcc1c-bde9-4999-92e3-03274eb7225d" />
+            <objectFlowTargets>
+              <objectFlow Id="570bee2b-aed8-4261-a36e-a8c7e0211ad5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="965f202a-7ab5-49dd-90d7-4e7481f8db3c" LastKnownName="Table Layout" />
+                <elementDefinition Id="c2e0255e-647a-46a7-97e8-55efd3738dea" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="d6f243b9-7a59-4293-b6f6-6c0f03e56caa" name="Click To Go" isLeaf="false">
+            <elementDefinition Id="ee6e017e-f985-42a2-ba19-36f136e2e139" />
+            <objectFlowTargets>
+              <objectFlow Id="0387a088-115e-4030-8b94-fb291a477338" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="e1c20ddb-c685-4750-9c1b-4bbf205f4319" LastKnownName="Carry Out Menu" />
+                <elementDefinition Id="6e38b217-10f1-45b7-ab6f-12d83aeb4ee8" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="a4149c14-6ee1-4312-b073-aaa5c36c9aa1" name="Click Back Button" isLeaf="false">
+            <elementDefinition Id="6a7cbaf5-b130-455b-b138-8b6db83c97d9" />
+            <objectFlowTargets>
+              <objectFlow Id="10c68547-9483-4e6b-b70b-cc3e2da38443" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="fbb91992-4118-4bb7-a2a7-de92c279ea57" LastKnownName="Login Page" />
+                <elementDefinition Id="e1f391e9-c4fb-46bd-a29f-42d04db64d7b" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="9ff9d580-e1b3-44de-9349-0de05b1239e6" name="Click Back Button" isLeaf="false">
+            <elementDefinition Id="1c30e508-1297-4a8e-9d3e-58e20c9aa51f" />
+            <objectFlowTargets>
+              <objectFlow Id="c8120863-3b46-4cdd-85d0-4dae4b96fc14" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="fbb91992-4118-4bb7-a2a7-de92c279ea57" LastKnownName="Login Page" />
+                <elementDefinition Id="05886ee2-0c5b-47ed-b068-a19b201c877b" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="c9df1cbe-ac00-4e40-8245-542fb770a624" name="Click Back Button" isLeaf="false">
+            <elementDefinition Id="e348cada-4750-4141-9762-bf6a1ac8b236" />
+            <objectFlowTargets>
+              <objectFlow Id="ac87aaff-5a78-49ce-baae-f4d591cb996a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="6701513f-0c28-42d4-aaac-0589f11eac39" LastKnownName="Two Button Menu" />
+                <elementDefinition Id="b05b14d8-5c8c-4858-be3c-25610c6284ea" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="4b6033ef-166b-4528-b149-ea6d47965c3b" name="Click Back Button" isLeaf="false">
+            <elementDefinition Id="10a0f942-faea-448f-a473-2f2db89d7a3c" />
+            <objectFlowTargets>
+              <objectFlow Id="52ea8a13-0f9d-41d7-b39d-d989677638a2" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="6701513f-0c28-42d4-aaac-0589f11eac39" LastKnownName="Two Button Menu" />
+                <elementDefinition Id="768697e9-d64b-454f-afab-53abc2f0e6b2" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="7e522501-d1f5-4c2e-9fa3-fb0ad4e16542" name="Click Table" isLeaf="false">
+            <elementDefinition Id="a96b7c93-7c29-4368-aa7a-0530b65d175e" />
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="6211d8a1-7310-4c99-a208-34f0b1f2b801" name="Table Number" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="165543c4-55fe-4970-8dab-a104657f6f69" />
+                  <objectFlowTargets>
+                    <objectFlow Id="bbfbd14c-e219-442a-9bd9-59114967c940" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <objectNodeMoniker Id="e1c20ddb-c685-4750-9c1b-4bbf205f4319" LastKnownName="Carry Out Menu" />
+                      <elementDefinition Id="d174d4a5-2199-4609-b734-27daefbda200" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="e82bfca9-571f-4440-96ce-68788b0b300a" name="2147483647" value="2147483647">
+                      <elementDefinition Id="7866202e-c344-4537-8391-62e313f157ca" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="e89bebcd-6716-42a8-8cc5-b965286fa085" name="Click Entree Button" isLeaf="false">
+            <elementDefinition Id="97a08269-7131-45f6-afbc-d2b43daa5eb1" />
+            <objectFlowTargets>
+              <objectFlow Id="4806994c-847e-477f-8ad3-49751ef53847" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="11077ea9-d0cc-4bdb-a462-439d053dad0a" LastKnownName="Entree Menu" />
+                <elementDefinition Id="6bda204f-955b-46a7-9801-370904a1a4e5" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="015671ad-070a-468c-bdd6-e21519088bf3" name="Click Beverage Button" isLeaf="false">
+            <elementDefinition Id="0252aca1-31a5-43d8-9148-4edf83473c9b" />
+            <objectFlowTargets>
+              <objectFlow Id="8a808a45-03ed-4ac7-a997-6daa3cace24e" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="98e85935-f319-4aff-bad2-1c80efb2185c" LastKnownName="Beverage Menu" />
+                <elementDefinition Id="012f1606-d00b-425f-8231-6d43286113c8" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="ffb5a756-0e25-42c0-9be5-05a6aae66bdb" name="Click Dessert Button" isLeaf="false">
+            <elementDefinition Id="2b9a5b3f-1432-4d8f-81c5-b0edcd221dad" />
+            <objectFlowTargets>
+              <objectFlow Id="62ca42ff-9f77-4c59-9ea1-9e2aae03e459" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="bf6f5aa7-8690-45df-942a-0376f80d901e" LastKnownName="Dessert Menu" />
+                <elementDefinition Id="36608e75-f506-4122-a02f-4536d8a6795b" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="a9a5aff4-b81b-4914-85d8-cc381d78a3b8" name="Click Appetizer Button" isLeaf="false">
+            <elementDefinition Id="948b261b-8cc6-4f97-9b6f-9074a654a0a5" />
+            <objectFlowTargets>
+              <objectFlow Id="ae44d73c-05af-4044-8be6-8e0e04e564c9" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="9933de79-8b1d-4639-ad2c-17a3eaf47485" LastKnownName="Appetizer Menu" />
+                <elementDefinition Id="5ccfbef7-9e2f-45ba-95b3-be4c6794633c" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="11077ea9-d0cc-4bdb-a462-439d053dad0a" name="Entree Menu" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="93a6ae5b-a880-4f67-a9a5-f30c038b32f6" />
+            <objectFlowTargets>
+              <objectFlow Id="a85d1821-94ef-409b-84c7-ebd6503327cf" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <joinNodeMoniker Id="ff3f4b14-9ac0-4959-a32d-6fb3948b89a3" LastKnownName="Join1" />
+                <elementDefinition Id="d8aa91e6-2984-422a-b423-289017a48ef5" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="3dc41643-f684-4621-85a4-dfdad6e9443f" name="2147483647" value="2147483647">
+                <elementDefinition Id="3ee3c920-3f29-43c5-b090-d26d9070d1e4" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="98e85935-f319-4aff-bad2-1c80efb2185c" name="Beverage Menu" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="083703a3-6397-4be8-a760-9fffae20b454" />
+            <objectFlowTargets>
+              <objectFlow Id="e91ee4aa-87f8-47df-8c9c-17183fbd01e7" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <joinNodeMoniker Id="ff3f4b14-9ac0-4959-a32d-6fb3948b89a3" LastKnownName="Join1" />
+                <elementDefinition Id="481c6dd9-49bc-47d0-bb55-3d5242fbd08a" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="6206c9f3-813c-4f6f-af48-9b254474f8df" name="2147483647" value="2147483647">
+                <elementDefinition Id="b3d41244-788c-4b22-a5b3-c6a19e81229c" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="bf6f5aa7-8690-45df-942a-0376f80d901e" name="Dessert Menu" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="b06f54e7-f6e6-4e0b-994e-1b93da769044" />
+            <objectFlowTargets>
+              <objectFlow Id="426a8534-beb3-40a7-9785-40e6ed30c52c" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <joinNodeMoniker Id="ff3f4b14-9ac0-4959-a32d-6fb3948b89a3" LastKnownName="Join1" />
+                <elementDefinition Id="eb27b838-17bb-4486-8d8e-34186600debf" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="8b705ca6-bf73-4ce6-9d4f-c0808c432371" name="2147483647" value="2147483647">
+                <elementDefinition Id="ec790ad5-62da-4d3d-b11d-d4b82af0d561" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="9933de79-8b1d-4639-ad2c-17a3eaf47485" name="Appetizer Menu" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="f89bfedf-ca4f-45ab-ad91-64c6dbaf5f16" />
+            <objectFlowTargets>
+              <objectFlow Id="ad0b0bf3-c8f5-4738-90b4-0a3d6317b810" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <joinNodeMoniker Id="ff3f4b14-9ac0-4959-a32d-6fb3948b89a3" LastKnownName="Join1" />
+                <elementDefinition Id="661bb1f4-1995-4d15-9c80-3c8fb1524846" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="1fe5f946-911b-47e0-9a00-d7f31e76c58b" name="2147483647" value="2147483647">
+                <elementDefinition Id="2dd346d4-60fb-4cb1-9c8f-b5bc4fd17c53" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <forkNode Id="dd641ecf-4107-419a-a71f-75a035b97b0c" name="Fork1" isLeaf="false">
+            <elementDefinition Id="be46f20a-8461-430e-b85d-e4d1f089f0cb" />
+            <flowNodeTargets>
+              <controlFlow Id="c99b6d11-cf71-4773-94d2-b863d911e56d" isLeaf="false">
+                <opaqueActionMoniker Id="e89bebcd-6716-42a8-8cc5-b965286fa085" LastKnownName="Click Entree Button" />
+                <elementDefinition Id="fc7da425-caed-4b11-ae0f-7c6f4678299e" />
+              </controlFlow>
+              <controlFlow Id="f448529b-0a27-47b3-8779-92b78e42db56" isLeaf="false">
+                <opaqueActionMoniker Id="015671ad-070a-468c-bdd6-e21519088bf3" LastKnownName="Click Beverage Button" />
+                <elementDefinition Id="19314332-2012-4114-9016-bcf39d79feda" />
+              </controlFlow>
+              <controlFlow Id="33772906-71d8-404a-9177-99d67d531f0d" isLeaf="false">
+                <opaqueActionMoniker Id="ffb5a756-0e25-42c0-9be5-05a6aae66bdb" LastKnownName="Click Dessert Button" />
+                <elementDefinition Id="65bd07d6-693f-41a2-802b-d88b070d01dd" />
+              </controlFlow>
+              <controlFlow Id="f5fbf14f-6119-463d-a739-589b8d956d14" isLeaf="false">
+                <opaqueActionMoniker Id="a9a5aff4-b81b-4914-85d8-cc381d78a3b8" LastKnownName="Click Appetizer Button" />
+                <elementDefinition Id="f14095d6-16dc-44c1-b1f0-b63685afbb04" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="8ba8bb16-3832-41ee-a769-9f8fea825d8f" name="Click Checkout Button" isLeaf="false">
+            <elementDefinition Id="81d61ecd-4656-40dd-bb7a-2b7e611e6832" />
+            <objectFlowTargets>
+              <objectFlow Id="6aad7021-f6e2-4ec9-b285-074574df09f5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="38313069-91cd-4463-92ab-e17f3950d9ea" LastKnownName="Checkout Menu" />
+                <elementDefinition Id="64bf6aa7-3c43-4695-85e8-5fdb68f5f453" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <joinNode Id="ff3f4b14-9ac0-4959-a32d-6fb3948b89a3" name="Join1" isLeaf="false">
+            <elementDefinition Id="f987297a-fcc9-4889-ad9e-00abcc2ffed6" />
+            <flowNodeTargets>
+              <controlFlow Id="b03d076c-0d38-4a8b-8101-0a72112dee62" isLeaf="false">
+                <opaqueActionMoniker Id="8ba8bb16-3832-41ee-a769-9f8fea825d8f" LastKnownName="Click Checkout Button" />
+                <elementDefinition Id="61ff4719-8a97-4c93-b5da-8c5e3eea8aca" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <objectNode Id="38313069-91cd-4463-92ab-e17f3950d9ea" name="Checkout Menu" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="22311221-3b09-464e-bcc8-55418121f97f" />
+            <objectFlowTargets>
+              <objectFlow Id="5c5e428c-4f99-4759-ba2c-1680e2eba5b5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="7fa6b706-ecc3-48b9-8b5f-43e50a9b9b7c" LastKnownName="Click Close Button" />
+                <elementDefinition Id="387873e8-78f2-496b-a7c8-10f3298a2fb9" />
+              </objectFlow>
+              <objectFlow Id="01dc4265-8075-4024-be2b-1f93d69d7edc" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="5f4809c6-eed8-42cb-bfc7-a535973150cf" LastKnownName="Manipulate Check" />
+                <elementDefinition Id="de2acd18-f242-44a4-95a4-5ac048f4d242" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="4522b6e5-95f6-4b32-8af6-286ac0d1b139" name="2147483647" value="2147483647">
+                <elementDefinition Id="782169bd-60b0-4296-a21c-0905897e06d7" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <activityFinalNode Id="6eb28dcc-ed69-4074-bfd1-ef25daaab45b" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="8cff4eb4-2622-49d1-a355-03b6b4972143" />
+          </activityFinalNode>
+          <opaqueAction Id="7fa6b706-ecc3-48b9-8b5f-43e50a9b9b7c" name="Click Close Button" isLeaf="false">
+            <elementDefinition Id="8f9927f2-41d9-4d73-bf21-fda52697c92f" />
+            <flowNodeTargets>
+              <controlFlow Id="c536d038-68cd-406c-98fd-9fa6e238a428" isLeaf="false">
+                <activityFinalNodeMoniker Id="6eb28dcc-ed69-4074-bfd1-ef25daaab45b" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="16ebce2e-0596-4953-9fe2-030226d8bc45" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="a647f8d0-e8b6-42b2-ab88-1beb0a1c333f" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="6701513f-0c28-42d4-aaac-0589f11eac39" LastKnownName="Two Button Menu" />
+                <elementDefinition Id="5bf063b9-220f-42eb-9171-9b453645d094" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="5f4809c6-eed8-42cb-bfc7-a535973150cf" name="Manipulate Check" isLeaf="false">
+            <elementDefinition Id="2d64ecb1-e4a7-443e-8726-0533bf676127" />
+            <objectFlowTargets>
+              <objectFlow Id="ae55a3cc-fb51-4978-a019-2a1b11e66365" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="38313069-91cd-4463-92ab-e17f3950d9ea" LastKnownName="Checkout Menu" />
+                <elementDefinition Id="67916d07-0379-42e0-b1c1-e3aa22f21218" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="32095fb3-76eb-443a-bea9-330f7121e8f3" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="da593841-d4f2-4129-8478-898fd249df4e" name="Add Beverage to Menu" linkedPackageId="4b5151df-3919-4059-a774-9b6b4aae2587" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4fa4dd17-3562-4025-b93b-624b252426fb">
+      <profileInstance Id="c391787a-f346-4b64-b796-4f09a0b98182" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a83bdac7-9f3a-4e89-863c-0a8c06e7385a">
+      <profileInstance Id="ecf04538-1c9f-4d06-ab38-f9f8220ebf63" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="67d94bd2-7e98-4a36-9edf-fc3865e1980d" name="Add Beverage to Menu" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="7701ea34-6aec-4204-bb5d-118bffc11128" />
+        <nodes>
+          <initialNode Id="16f3951e-f5fa-41fd-9b62-cf133062062e" name="Initial1" isLeaf="false">
+            <elementDefinition Id="8b6b26fe-d024-46a4-a44e-ae6a48ada745" />
+            <flowNodeTargets>
+              <controlFlow Id="8e18a143-fc81-4f6d-9425-273f07569e62" isLeaf="false">
+                <opaqueActionMoniker Id="74f1f56e-32e0-4888-ba91-bca3a8eec304" LastKnownName="Add Beverage To Table" />
+                <elementDefinition Id="b9a74b4c-64e5-4fc1-a3a2-3e0641a804cd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="74f1f56e-32e0-4888-ba91-bca3a8eec304" name="Add Beverage To Table" isLeaf="false">
+            <elementDefinition Id="d15e8841-825d-49e8-861d-48f9b26c01d9" />
+            <flowNodeTargets>
+              <controlFlow Id="75c63940-7d0a-4046-82e3-5fc34087689d" isLeaf="false">
+                <opaqueActionMoniker Id="42058f4e-99c6-4c95-8699-8dd57e293e65" LastKnownName="Click Table with desired Number" />
+                <elementDefinition Id="1c422fa6-5b8c-4fb0-bba7-ed687f248874" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="42058f4e-99c6-4c95-8699-8dd57e293e65" name="Click Table with desired Number" isLeaf="false">
+            <elementDefinition Id="931f9477-c106-4dc4-8023-751878fb41a9" />
+            <flowNodeTargets>
+              <controlFlow Id="dda2a4ce-a64c-4bea-8ec9-fa0f95d2a2cc" isLeaf="false">
+                <opaqueActionMoniker Id="7c776de9-aaa1-4676-a734-4d20d35adc1b" LastKnownName="Go To Beverage menu" />
+                <elementDefinition Id="44216f75-92e3-4cac-adda-a95880f7436f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7c776de9-aaa1-4676-a734-4d20d35adc1b" name="Go To Beverage menu" isLeaf="false">
+            <elementDefinition Id="bf0f4021-9a77-4d21-a2aa-5d172fd313d4" />
+            <flowNodeTargets>
+              <controlFlow Id="a176cd67-c191-4f35-b311-6158adbf1a3d" isLeaf="false">
+                <opaqueActionMoniker Id="885e71fe-8cc2-46cb-b588-5891dd69b26a" LastKnownName="Click Beverages Button" />
+                <elementDefinition Id="717201f7-3989-495f-9eef-4ed466833841" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="885e71fe-8cc2-46cb-b588-5891dd69b26a" name="Click Beverages Button" isLeaf="false">
+            <elementDefinition Id="cefc9278-beae-44af-a4df-a6b8acd6243d" />
+            <flowNodeTargets>
+              <controlFlow Id="7e171c1c-3c87-4c6d-860d-5faac67be094" isLeaf="false">
+                <opaqueActionMoniker Id="c470bd0a-b12f-453f-b330-7125e9b0ab0d" LastKnownName="Beverage Menu Appears in Frame" />
+                <elementDefinition Id="173cef19-5790-4914-8830-a43ff16b9932" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c470bd0a-b12f-453f-b330-7125e9b0ab0d" name="Beverage Menu Appears in Frame" isLeaf="false">
+            <elementDefinition Id="7f3be76e-4963-45a9-99cc-16de1b3bbb7d" />
+            <flowNodeTargets>
+              <controlFlow Id="8918cef8-057a-443c-a57d-44d16a774e9d" isLeaf="false">
+                <opaqueActionMoniker Id="b45162c9-a5e5-4587-8418-d911cff5ba4f" LastKnownName="Click Desired Beverage" />
+                <elementDefinition Id="14e8fc56-b94d-4dae-b947-4465a8272474" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b45162c9-a5e5-4587-8418-d911cff5ba4f" name="Click Desired Beverage" isLeaf="false">
+            <elementDefinition Id="d24edd9d-fcfe-475d-9e38-6f4eb1468318" />
+            <flowNodeTargets>
+              <controlFlow Id="653c7429-1125-486c-aa26-fde21624744a" isLeaf="false">
+                <opaqueActionMoniker Id="27534189-0b58-49f5-9eff-c7e8b1e893f6" LastKnownName="Beverage is added to Table" />
+                <elementDefinition Id="780501d8-a8b7-4b85-b047-70f0c9da59eb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="27534189-0b58-49f5-9eff-c7e8b1e893f6" name="Beverage is added to Table" isLeaf="false">
+            <elementDefinition Id="e2e01101-6848-4f7e-a5f3-24eb6af163c2" />
+            <flowNodeTargets>
+              <controlFlow Id="0adf7d18-967b-4592-bb2a-4773493dec86" isLeaf="false">
+                <activityFinalNodeMoniker Id="73237737-facb-4627-ab87-2b8c199af1fb" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="532cca76-352b-41d4-bf1b-7edb3ed90aa6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="73237737-facb-4627-ab87-2b8c199af1fb" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="9b5a72b8-3441-4ece-9c12-d2d842bbd168" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="4b5151df-3919-4059-a774-9b6b4aae2587" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>

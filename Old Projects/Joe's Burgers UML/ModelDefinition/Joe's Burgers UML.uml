@@ -1,0 +1,1993 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5"
+  name="Joe's Burgers UML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="9b507150-68d6-44f2-b3b3-a2d96ba5b132"
+        name="State Transition Diagram (STD)"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="a2bf80ce-c799-433d-a6e5-26a9ddf08531"
+            name="Initial1"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="7ad4bfd4-ed84-41f8-83f3-f51a8baee4d6"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="9a5877cc-2c24-4a33-9f80-9d721473fef9"
+                  LastKnownName="Login Page"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <objectNode
+            Id="9a5877cc-2c24-4a33-9f80-9d721473fef9"
+            name="Login Page"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f11adf95-534a-432f-b1b0-5fd037228612"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="56fd2ed4-07c8-4e59-a2ba-89cea71a6a2a"
+                  LastKnownName="Click Register New User Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="3d39f68e-40d3-4288-9047-86f769be0571"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="914ab8db-58aa-413c-a95f-a046b31200ed"
+                  LastKnownName="Incorrect Login"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="a962ae6b-0293-46b7-bc08-13eda7106838"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="73330ae0-24a8-4732-8f41-b2321494158a"
+                  LastKnownName="Correct Login"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="40544c01-d1e2-4d84-9cd5-b01921f52843"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="cf4d2aac-33e6-486b-b338-f91736d2d9b7"
+            name="Add New Employee"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="84f33fc3-d8ca-40b8-a1a1-27f2a3c0d1f7"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="1b95ca53-899a-4eb5-8c14-34a07dcafbcf"
+                  LastKnownName="Submit Information"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="2c5c8f58-d1a9-4aaf-8b51-1302faf6b77a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="1c30e508-1297-4a8e-9d3e-58e20c9aa51f"
+                  LastKnownName="Click Back Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="0ca0441c-893b-4387-b29e-0fb8ebac7385"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="d774bdf4-9cb9-4538-ad9f-a97470d9e7db"
+            name="Carry Out Menu"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="3dbcda2b-700c-492b-8f09-8c216e9b2004"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="e348cada-4750-4141-9762-bf6a1ac8b236"
+                  LastKnownName="Click Back Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="9a108989-1b5c-4006-9863-62db4f42c4de"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <forkNodeMoniker
+                  Id="be46f20a-8461-430e-b85d-e4d1f089f0cb"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="0a1f9232-601f-4962-83d8-398cb0afc80c"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="0815db4d-c545-4ce7-a8af-181ed2b167aa"
+            name="Table Layout"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="fcb9e646-3b36-4b32-8344-7d59b399cad2"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="10a0f942-faea-448f-a473-2f2db89d7a3c"
+                  LastKnownName="Click Back Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="4bc92343-c5ad-4c20-aecc-c4f3aea097f9"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="a96b7c93-7c29-4368-aa7a-0530b65d175e"
+                  LastKnownName="Click Table"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="56b74d54-b146-4b29-b4b4-1e187ceb3761"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="4a470d25-8ef7-46d5-9eff-4933d687c25c"
+            name="Two Button Menu"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="da0a3fad-38b7-427f-9f21-90ab123071b0"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="6a7cbaf5-b130-455b-b138-8b6db83c97d9"
+                  LastKnownName="Click Back Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="46b464ed-0c10-4295-a930-8f4c90382582"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="ee6e017e-f985-42a2-ba19-36f136e2e139"
+                  LastKnownName="Click To Go"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="70d77b22-efad-4378-ac5b-1f58dfd5050f"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="91ffcc1c-bde9-4999-92e3-03274eb7225d"
+                  LastKnownName="Click Dine In"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="80ed25e9-9473-4862-9252-d87c73120902"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="56fd2ed4-07c8-4e59-a2ba-89cea71a6a2a"
+            name="Click Register New User Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="bdb51d6a-2cd4-4fa9-a450-7f081116ac8f"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="cf4d2aac-33e6-486b-b338-f91736d2d9b7"
+                  LastKnownName="Add New Employee"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1b95ca53-899a-4eb5-8c14-34a07dcafbcf"
+            name="Submit Information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fa6cf674-eaf0-48d0-a1d5-b4c54b0879f6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4b304745-6ec5-4e22-a719-e2a18e777238"
+                  LastKnownName="Save User"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin
+                  Id="40888510-07d3-42ee-906d-454de04bb071"
+                  name="User Information"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="b2a87895-e84c-4649-9a06-7dfa0676f105"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <sendSignalAction
+            Id="685d616c-d331-4e61-aedb-8f8897208a29"
+            name="Username"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ef0394eb-7189-43bf-ab1f-c82f4cf5d200"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <inputPinMoniker
+                  Id="40888510-07d3-42ee-906d-454de04bb071"
+                  LastKnownName="User Information"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <sendSignalAction
+            Id="fe6166c4-1231-4303-924b-e7f24e74ee79"
+            name="Password"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="111e90aa-afea-456a-b6c7-070b55961185"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <inputPinMoniker
+                  Id="40888510-07d3-42ee-906d-454de04bb071"
+                  LastKnownName="User Information"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </sendSignalAction>
+          <opaqueAction
+            Id="4b304745-6ec5-4e22-a719-e2a18e777238"
+            name="Save User"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="5dd5de89-270a-4c96-ba1d-1da9bfec5086"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="9a5877cc-2c24-4a33-9f80-9d721473fef9"
+                  LastKnownName="Login Page"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="914ab8db-58aa-413c-a95f-a046b31200ed"
+            name="Incorrect Login"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="1c8e2013-bb93-4a78-9eeb-9fd7fa1a61a0"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="9a5877cc-2c24-4a33-9f80-9d721473fef9"
+                  LastKnownName="Login Page"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="73330ae0-24a8-4732-8f41-b2321494158a"
+            name="Correct Login"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="81a966a8-0581-4cb8-af55-36d8125af35e"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4a470d25-8ef7-46d5-9eff-4933d687c25c"
+                  LastKnownName="Two Button Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="91ffcc1c-bde9-4999-92e3-03274eb7225d"
+            name="Click Dine In"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="c2e0255e-647a-46a7-97e8-55efd3738dea"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="0815db4d-c545-4ce7-a8af-181ed2b167aa"
+                  LastKnownName="Table Layout"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ee6e017e-f985-42a2-ba19-36f136e2e139"
+            name="Click To Go"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="6e38b217-10f1-45b7-ab6f-12d83aeb4ee8"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="d774bdf4-9cb9-4538-ad9f-a97470d9e7db"
+                  LastKnownName="Carry Out Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6a7cbaf5-b130-455b-b138-8b6db83c97d9"
+            name="Click Back Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="e1f391e9-c4fb-46bd-a29f-42d04db64d7b"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="9a5877cc-2c24-4a33-9f80-9d721473fef9"
+                  LastKnownName="Login Page"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1c30e508-1297-4a8e-9d3e-58e20c9aa51f"
+            name="Click Back Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="05886ee2-0c5b-47ed-b068-a19b201c877b"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="9a5877cc-2c24-4a33-9f80-9d721473fef9"
+                  LastKnownName="Login Page"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e348cada-4750-4141-9762-bf6a1ac8b236"
+            name="Click Back Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="b05b14d8-5c8c-4858-be3c-25610c6284ea"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4a470d25-8ef7-46d5-9eff-4933d687c25c"
+                  LastKnownName="Two Button Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="10a0f942-faea-448f-a473-2f2db89d7a3c"
+            name="Click Back Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="768697e9-d64b-454f-afab-53abc2f0e6b2"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4a470d25-8ef7-46d5-9eff-4933d687c25c"
+                  LastKnownName="Two Button Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a96b7c93-7c29-4368-aa7a-0530b65d175e"
+            name="Click Table"
+            isLeaf="false">
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="165543c4-55fe-4970-8dab-a104657f6f69"
+                  name="Table Number"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <objectFlowTargets>
+                    <objectFlow
+                      Id="d174d4a5-2199-4609-b734-27daefbda200"
+                      isLeaf="false"
+                      isMulticast="false"
+                      isMultireceive="false">
+                      <objectNodeMoniker
+                        Id="d774bdf4-9cb9-4538-ad9f-a97470d9e7db"
+                        LastKnownName="Carry Out Menu"
+                        LastKnownLocation="Joe's Burgers UML.uml" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger
+                      Id="7866202e-c344-4537-8391-62e313f157ca"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction
+            Id="97a08269-7131-45f6-afbc-d2b43daa5eb1"
+            name="Click Entree Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="6bda204f-955b-46a7-9801-370904a1a4e5"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="93a6ae5b-a880-4f67-a9a5-f30c038b32f6"
+                  LastKnownName="Entree Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0252aca1-31a5-43d8-9148-4edf83473c9b"
+            name="Click Beverage Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="012f1606-d00b-425f-8231-6d43286113c8"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="083703a3-6397-4be8-a760-9fffae20b454"
+                  LastKnownName="Beverage Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2b9a5b3f-1432-4d8f-81c5-b0edcd221dad"
+            name="Click Dessert Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="36608e75-f506-4122-a02f-4536d8a6795b"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="b06f54e7-f6e6-4e0b-994e-1b93da769044"
+                  LastKnownName="Dessert Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="948b261b-8cc6-4f97-9b6f-9074a654a0a5"
+            name="Click Appetizer Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="5ccfbef7-9e2f-45ba-95b3-be4c6794633c"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="f89bfedf-ca4f-45ab-ad91-64c6dbaf5f16"
+                  LastKnownName="Appetizer Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="93a6ae5b-a880-4f67-a9a5-f30c038b32f6"
+            name="Entree Menu"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="d8aa91e6-2984-422a-b423-289017a48ef5"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <joinNodeMoniker
+                  Id="f987297a-fcc9-4889-ad9e-00abcc2ffed6"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="3ee3c920-3f29-43c5-b090-d26d9070d1e4"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="083703a3-6397-4be8-a760-9fffae20b454"
+            name="Beverage Menu"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="481c6dd9-49bc-47d0-bb55-3d5242fbd08a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <joinNodeMoniker
+                  Id="f987297a-fcc9-4889-ad9e-00abcc2ffed6"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="b3d41244-788c-4b22-a5b3-c6a19e81229c"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="b06f54e7-f6e6-4e0b-994e-1b93da769044"
+            name="Dessert Menu"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="eb27b838-17bb-4486-8d8e-34186600debf"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <joinNodeMoniker
+                  Id="f987297a-fcc9-4889-ad9e-00abcc2ffed6"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="ec790ad5-62da-4d3d-b11d-d4b82af0d561"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="f89bfedf-ca4f-45ab-ad91-64c6dbaf5f16"
+            name="Appetizer Menu"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="661bb1f4-1995-4d15-9c80-3c8fb1524846"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <joinNodeMoniker
+                  Id="f987297a-fcc9-4889-ad9e-00abcc2ffed6"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="2dd346d4-60fb-4cb1-9c8f-b5bc4fd17c53"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <forkNode
+            Id="be46f20a-8461-430e-b85d-e4d1f089f0cb"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fc7da425-caed-4b11-ae0f-7c6f4678299e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="97a08269-7131-45f6-afbc-d2b43daa5eb1"
+                  LastKnownName="Click Entree Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="19314332-2012-4114-9016-bcf39d79feda"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0252aca1-31a5-43d8-9148-4edf83473c9b"
+                  LastKnownName="Click Beverage Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="65bd07d6-693f-41a2-802b-d88b070d01dd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2b9a5b3f-1432-4d8f-81c5-b0edcd221dad"
+                  LastKnownName="Click Dessert Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f14095d6-16dc-44c1-b1f0-b63685afbb04"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="948b261b-8cc6-4f97-9b6f-9074a654a0a5"
+                  LastKnownName="Click Appetizer Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="81d61ecd-4656-40dd-bb7a-2b7e611e6832"
+            name="Click Checkout Button"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="64bf6aa7-3c43-4695-85e8-5fdb68f5f453"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="22311221-3b09-464e-bcc8-55418121f97f"
+                  LastKnownName="Checkout Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <joinNode
+            Id="f987297a-fcc9-4889-ad9e-00abcc2ffed6"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="61ff4719-8a97-4c93-b5da-8c5e3eea8aca"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="81d61ecd-4656-40dd-bb7a-2b7e611e6832"
+                  LastKnownName="Click Checkout Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <objectNode
+            Id="22311221-3b09-464e-bcc8-55418121f97f"
+            name="Checkout Menu"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="387873e8-78f2-496b-a7c8-10f3298a2fb9"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="8f9927f2-41d9-4d73-bf21-fda52697c92f"
+                  LastKnownName="Click Close Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="de2acd18-f242-44a4-95a4-5ac048f4d242"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="2d64ecb1-e4a7-443e-8726-0533bf676127"
+                  LastKnownName="Manipulate Check"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="782169bd-60b0-4296-a21c-0905897e06d7"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <activityFinalNode
+            Id="8cff4eb4-2622-49d1-a355-03b6b4972143"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="8f9927f2-41d9-4d73-bf21-fda52697c92f"
+            name="Click Close Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="16ebce2e-0596-4953-9fe2-030226d8bc45"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="8cff4eb4-2622-49d1-a355-03b6b4972143"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="5bf063b9-220f-42eb-9171-9b453645d094"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="4a470d25-8ef7-46d5-9eff-4933d687c25c"
+                  LastKnownName="Two Button Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2d64ecb1-e4a7-443e-8726-0533bf676127"
+            name="Manipulate Check"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="67916d07-0379-42e0-b1c1-e3aa22f21218"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="22311221-3b09-464e-bcc8-55418121f97f"
+                  LastKnownName="Checkout Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="f1686f33-7a58-458f-9553-1ade74d24ce5"
+        name="Activity Diagram"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="9353a8fe-09af-4b0e-b1be-2149c32908e2"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="500d0dc4-dfdc-41d5-83c3-d5b634dc9af6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d8a11e53-10c6-4dc0-b332-228e658e1ea7"
+                  LastKnownName="Registering a new employee"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="d8a11e53-10c6-4dc0-b332-228e658e1ea7"
+            name="Registering a new employee"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="caac4031-1185-474b-baaa-922fcc35c69a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1dbad365-e45f-4a17-94f3-2d198d127505"
+                  LastKnownName="Click Register New Employee Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1dbad365-e45f-4a17-94f3-2d198d127505"
+            name="Click Register New Employee Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="be5063c6-fb8f-406a-9e85-16a5a836dfbe"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="26c6c51a-b202-4d16-823a-7b91371bcc0d"
+                  LastKnownName="Record new username and password of employee"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="26c6c51a-b202-4d16-823a-7b91371bcc0d"
+            name="Record new username and password of employee"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="81144834-408e-45c4-a393-bb58d7e50e56"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c9db4a66-da29-449c-846c-3ba5b4259050"
+                  LastKnownName="Click Register Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c9db4a66-da29-449c-846c-3ba5b4259050"
+            name="Click Register Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="77d84597-04ea-4f73-bca9-7eef2cdbe1f6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e4185dae-4ed7-4e22-92e9-9f952f673400"
+                  LastKnownName="Save to Database"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e4185dae-4ed7-4e22-92e9-9f952f673400"
+            name="Save to Database"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="794d206e-cd54-4dac-b174-b048bf660ef5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9f8a7ed8-c938-433a-99b1-0db2d842a40c"
+                  LastKnownName="Back to Main Page"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="ed3c6b41-081d-4050-a902-c061cbe0c1e4"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="9f8a7ed8-c938-433a-99b1-0db2d842a40c"
+            name="Back to Main Page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="13ade68f-fbb6-4d49-af5e-239a7a66a83c"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ed3c6b41-081d-4050-a902-c061cbe0c1e4"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="8c7ffc7d-28a1-4a00-ad66-879f9bc9b6b1"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="79e1a26c-354b-4f16-8e2d-22b5c4173c38"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c359a693-71f5-4724-8c3d-c20fa0cdb4f1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2233ad6e-1752-4ed9-8253-81ce877beff7"
+                  LastKnownName="Enter Login Info"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="2233ad6e-1752-4ed9-8253-81ce877beff7"
+            name="Enter Login Info"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2856c50d-89b7-4277-b0e0-ef3e1d4e6c74"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="187c5834-a36d-4adc-9462-372d3253f024"
+                  LastKnownName="Click Arrow Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="187c5834-a36d-4adc-9462-372d3253f024"
+            name="Click Arrow Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e85d3c48-221b-4fbc-a82d-8d9a31dabc0d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="de53436e-306f-4b68-98de-d1242154cf79"
+                  LastKnownName="Invalid Information"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d1116d65-9e88-4fa5-862c-1ae717866c3b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4925d8a8-9373-40ba-9a91-f3b2c89bc58d"
+                  LastKnownName="Valid Information"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="de53436e-306f-4b68-98de-d1242154cf79"
+            name="Invalid Information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3e28acdb-3f69-4c60-a26f-4d815dc04d0b"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="da507cd8-93bb-4b3e-979d-69a2f63a2300"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4925d8a8-9373-40ba-9a91-f3b2c89bc58d"
+            name="Valid Information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="efe80eac-9960-48c4-a65b-a9419dea818d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dc894e69-fabe-4d22-b26f-1ece84e89189"
+                  LastKnownName="Go to Two Button Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="dc894e69-fabe-4d22-b26f-1ece84e89189"
+            name="Go to Two Button Menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="338db02d-1619-4c3a-92a4-4d19d906d68a"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ed8bf58c-eb86-44ec-a467-49904fc6eb68"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="ed8bf58c-eb86-44ec-a467-49904fc6eb68"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <forkNode
+            Id="da507cd8-93bb-4b3e-979d-69a2f63a2300"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cb75a794-cbb2-440e-8e3c-16b2a776afd2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2233ad6e-1752-4ed9-8253-81ce877beff7"
+                  LastKnownName="Enter Login Info"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2267a72c-4e71-409f-a3a2-d7feae9ffb38"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="90546156-a84d-407d-ae0d-e76fb4b58f05"
+                  LastKnownName="Login Error Pops up"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="90546156-a84d-407d-ae0d-e76fb4b58f05"
+            name="Login Error Pops up"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="466b6e14-8b1f-4be5-acf3-4f364d5c7a2d"
+        name="Register New Employee Cancel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="4333c51f-c90f-4173-aff4-fca2f4979122"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="00ce6934-d8eb-4ae8-b16c-a1db8aec15be"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="405c5f67-3a66-4e52-a266-43a0e7014ca9"
+                  LastKnownName="Click Register New User Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="405c5f67-3a66-4e52-a266-43a0e7014ca9"
+            name="Click Register New User Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4923e865-a846-489d-b9a7-50c5cac523ff"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="de736dd9-6ac5-41b9-896c-3b0eb6ca7a0b"
+                  LastKnownName="Enter User Information"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8bc46b0a-8a1e-48e2-8549-8f7f72d5780a"
+            name="Press Back Arrow Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0c146ee1-f4e2-4265-a0af-ec2e487c0911"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="57e8ffa1-a4fb-4e7f-98b9-760154ff19b2"
+                  LastKnownName="Go back to Main Page"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="de736dd9-6ac5-41b9-896c-3b0eb6ca7a0b"
+            name="Enter User Information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f80ac1f7-74b6-4bb2-b8bb-b327e3eb0b35"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8bc46b0a-8a1e-48e2-8549-8f7f72d5780a"
+                  LastKnownName="Press Back Arrow Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="57e8ffa1-a4fb-4e7f-98b9-760154ff19b2"
+            name="Go back to Main Page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a864fc75-b5e8-49fd-be2f-1ad039099ddd"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="13b8894b-a2ae-4515-a49c-80a0d3726522"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="13b8894b-a2ae-4515-a49c-80a0d3726522"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="ba647447-f573-4d40-a0ad-330c4131862e"
+        name="Go to Table Layout Menu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="7a69e65e-cb5d-40c0-a62f-b8d06fb9ae6d"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b26f901c-3a85-4200-b533-ec1d97e4bdb3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2249b796-f61d-494e-93a2-df0372794adc"
+                  LastKnownName="Go to Table Layout Page"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="2249b796-f61d-494e-93a2-df0372794adc"
+            name="Go to Table Layout Page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e2e9d7f7-37a3-4f67-b677-a8c4c9140994"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0897de53-6be0-4cb2-b8f9-0145764dd830"
+                  LastKnownName="Log into Program"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0897de53-6be0-4cb2-b8f9-0145764dd830"
+            name="Log into Program"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f820d6c7-3f12-4fe8-a57a-0f6395723ddd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="65dada85-c080-4f67-a2d8-73152569e6c2"
+                  LastKnownName="Go to Two Button Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="65dada85-c080-4f67-a2d8-73152569e6c2"
+            name="Go to Two Button Menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="183d580c-c808-4af0-aab6-e9a17d6b0063"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d54df104-8440-440e-94a2-28fcbbf1223f"
+                  LastKnownName="Click Dine In"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d54df104-8440-440e-94a2-28fcbbf1223f"
+            name="Click Dine In"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a6e81b8e-c60c-444e-bc2e-435db335d571"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3c6f28c0-486c-4ab4-b219-4fafea5ae855"
+                  LastKnownName="Go To Table Layout Page"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3c6f28c0-486c-4ab4-b219-4fafea5ae855"
+            name="Go To Table Layout Page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9dabc15c-d1fc-42bf-8584-39136d6672d8"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9eaa9a44-393d-4eab-9932-2508ba412546"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="9eaa9a44-393d-4eab-9932-2508ba412546"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="22facce8-36dd-469f-b215-5ff3909dc9bb"
+        name="Go to To Go Menu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="08a403a7-5f8d-4ef5-8b9e-2258f1c5e905"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f09e4ddd-1c2b-4924-b3d7-b26033598ae4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ff4ebea9-dc42-44c9-ba11-9bdf9883d1cf"
+                  LastKnownName="Enter Login Information"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="47a4f320-934f-4569-9aa9-71e4bcee6f4b"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="ff4ebea9-dc42-44c9-ba11-9bdf9883d1cf"
+            name="Enter Login Information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4af80fca-f08b-4b77-9ce3-6a2a902b8849"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="703d725f-bca2-495f-b071-c8bd9a80733b"
+                  LastKnownName="Click Arrow Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="65aa5eec-476a-4208-9b6a-6cbeadcd683b"
+            name="Go to Two Button Menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8c438dfc-2608-4e5a-af4b-5fbdf550b192"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d949959a-3ee8-48f2-a66e-7699d041c9ee"
+                  LastKnownName="Click &quot;To Go&quot; Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d949959a-3ee8-48f2-a66e-7699d041c9ee"
+            name="Click &quot;To Go&quot; Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1170bacb-31f1-42ab-b675-2749e0f3d712"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="975e4a6f-d9c5-494c-af7e-1b634f71d3de"
+                  LastKnownName="Go to To Go Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="975e4a6f-d9c5-494c-af7e-1b634f71d3de"
+            name="Go to To Go Menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d0b7fa7e-9486-41f7-bbae-d530d9679239"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="47a4f320-934f-4569-9aa9-71e4bcee6f4b"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="703d725f-bca2-495f-b071-c8bd9a80733b"
+            name="Click Arrow Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a6990834-c243-4830-9d5d-7a0396b621d9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="65aa5eec-476a-4208-9b6a-6cbeadcd683b"
+                  LastKnownName="Go to Two Button Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="bfdf0cf5-2fe4-4957-a134-f98fc34e8fc5"
+        name="Add Entree To Menu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="403c57f5-2f46-4456-a874-0a3841893dba"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cd8be319-a298-4f75-8143-ba14b933ac80"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="696b67df-468f-4938-b3ce-7893a524372c"
+                  LastKnownName="Add Entree To Table"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="696b67df-468f-4938-b3ce-7893a524372c"
+            name="Add Entree To Table"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e7f05349-f7d5-44e8-95f9-8fa657302b79"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e2996a46-ec13-4e07-bfc3-73ca969533d0"
+                  LastKnownName="Click Table with desired Number"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e2996a46-ec13-4e07-bfc3-73ca969533d0"
+            name="Click Table with desired Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6e1bd8b7-2a9f-4ebb-9a22-ac4a2610b001"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="152b081c-87ff-40d3-b685-59b1070d215d"
+                  LastKnownName="Go To Food menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="152b081c-87ff-40d3-b685-59b1070d215d"
+            name="Go To Food menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="08958c33-d831-4c04-9947-1f8566fc3cb6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="16468eb3-05da-4c34-bfc5-fca34491635a"
+                  LastKnownName="Click Entree Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="16468eb3-05da-4c34-bfc5-fca34491635a"
+            name="Click Entree Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c4ae8148-27ca-4dc1-9777-00710b0ba7be"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="800125cd-c277-41c4-9dca-30615d95fb47"
+                  LastKnownName="Entree Menu Appears in Frame"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="800125cd-c277-41c4-9dca-30615d95fb47"
+            name="Entree Menu Appears in Frame"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a36e599d-65b4-4592-933a-1c41bc9c9443"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f7620007-4c2c-4eed-a889-11a8f9b3cccb"
+                  LastKnownName="Click Desired Entree"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f7620007-4c2c-4eed-a889-11a8f9b3cccb"
+            name="Click Desired Entree"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0348c6c3-f519-4de9-ba4e-0bfe11953c58"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eaca0eb0-4b6e-4446-865a-f34491424b02"
+                  LastKnownName="Entree is added to Table"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="eaca0eb0-4b6e-4446-865a-f34491424b02"
+            name="Entree is added to Table"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e898c024-fe53-40ee-b7a9-d8efe1a557ed"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="fa4b04a2-3dde-493a-9895-2ef43b820c75"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="fa4b04a2-3dde-493a-9895-2ef43b820c75"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="7701ea34-6aec-4204-bb5d-118bffc11128"
+        name="Add Beverage to Menu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="8b6b26fe-d024-46a4-a44e-ae6a48ada745"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b9a74b4c-64e5-4fc1-a3a2-3e0641a804cd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d15e8841-825d-49e8-861d-48f9b26c01d9"
+                  LastKnownName="Add Beverage To Table"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="d15e8841-825d-49e8-861d-48f9b26c01d9"
+            name="Add Beverage To Table"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1c422fa6-5b8c-4fb0-bba7-ed687f248874"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="931f9477-c106-4dc4-8023-751878fb41a9"
+                  LastKnownName="Click Table with desired Number"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="931f9477-c106-4dc4-8023-751878fb41a9"
+            name="Click Table with desired Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="44216f75-92e3-4cac-adda-a95880f7436f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bf0f4021-9a77-4d21-a2aa-5d172fd313d4"
+                  LastKnownName="Go To Beverage menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="bf0f4021-9a77-4d21-a2aa-5d172fd313d4"
+            name="Go To Beverage menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="717201f7-3989-495f-9eef-4ed466833841"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cefc9278-beae-44af-a4df-a6b8acd6243d"
+                  LastKnownName="Click Beverages Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cefc9278-beae-44af-a4df-a6b8acd6243d"
+            name="Click Beverages Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="173cef19-5790-4914-8830-a43ff16b9932"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7f3be76e-4963-45a9-99cc-16de1b3bbb7d"
+                  LastKnownName="Beverage Menu Appears in Frame"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7f3be76e-4963-45a9-99cc-16de1b3bbb7d"
+            name="Beverage Menu Appears in Frame"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="14e8fc56-b94d-4dae-b947-4465a8272474"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d24edd9d-fcfe-475d-9e38-6f4eb1468318"
+                  LastKnownName="Click Desired Beverage"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d24edd9d-fcfe-475d-9e38-6f4eb1468318"
+            name="Click Desired Beverage"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="780501d8-a8b7-4b85-b047-70f0c9da59eb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e2e01101-6848-4f7e-a5f3-24eb6af163c2"
+                  LastKnownName="Beverage is added to Table"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e2e01101-6848-4f7e-a5f3-24eb6af163c2"
+            name="Beverage is added to Table"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="532cca76-352b-41d4-bf1b-7edb3ed90aa6"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9b5a72b8-3441-4ece-9c12-d2d842bbd168"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="9b5a72b8-3441-4ece-9c12-d2d842bbd168"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="9dfc4c85-dcfe-4c6e-942a-678b424a6350"
+        name="Add Dessert To Table"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="79017535-cfe4-4adc-80f0-ce3055488710"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9fcf189f-683f-4b42-bbac-eefcef64ebcd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="53ec3f17-d9ce-466d-b6d7-6ad2f5199c31"
+                  LastKnownName="Add Dessert To Table"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="53ec3f17-d9ce-466d-b6d7-6ad2f5199c31"
+            name="Add Dessert To Table"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e5b52db1-697f-4bb0-8343-17a27468a653"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9d60ff6c-27f0-49d9-84e2-fcffccb3d10f"
+                  LastKnownName="Click Table with desired Number"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9d60ff6c-27f0-49d9-84e2-fcffccb3d10f"
+            name="Click Table with desired Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="28a4d0a9-0c90-407a-ba3a-eb75170a64b0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c54eec89-1077-498c-8504-607f371790c5"
+                  LastKnownName="Go To Dessert Menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c54eec89-1077-498c-8504-607f371790c5"
+            name="Go To Dessert Menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="40ca60c2-24c5-445c-90fd-769375c8b434"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dcde8ca9-c694-42a2-88b8-ef0c189d1a17"
+                  LastKnownName="Click Desserts Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="dcde8ca9-c694-42a2-88b8-ef0c189d1a17"
+            name="Click Desserts Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b22bf105-dcf8-4edb-b7d9-893c540b4966"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="48b103b6-238b-429f-9df2-f08d5f238075"
+                  LastKnownName="Desserts Menu Appears in Frame"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="48b103b6-238b-429f-9df2-f08d5f238075"
+            name="Desserts Menu Appears in Frame"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ae10c833-1b4c-431b-8560-eada65838a0f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="76f1af94-6d7e-49c4-9af2-af9ed878c3c6"
+                  LastKnownName="Click Desired Dessert"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="76f1af94-6d7e-49c4-9af2-af9ed878c3c6"
+            name="Click Desired Dessert"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="88ef4375-0936-4242-b991-a8c28edb84b1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="32b263b5-ac16-465b-9254-a66666042187"
+                  LastKnownName="Dessert is added to Table"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="32b263b5-ac16-465b-9254-a66666042187"
+            name="Dessert is added to Table"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0e3b81c5-aed5-4def-a346-7db378369b9e"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="4b87c42d-a638-437b-a003-764bbb69a1f1"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="4b87c42d-a638-437b-a003-764bbb69a1f1"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="87d1dc95-3550-42b2-ae39-b413473b3c65"
+        name="Remove Item"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="943bd339-068a-4d65-8c7e-a6ec61c470ca"
+            name="Initial1"
+            isLeaf="false" />
+          <initialNode
+            Id="37edbbe4-4c0f-4933-bbb3-e87155fcf417"
+            name="Initial11"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9bf41e40-06f6-483b-9a34-c20016138be4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="03f7f627-07a7-4851-ad26-626e7c6255e1"
+                  LastKnownName="Remove Item from Table"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="03f7f627-07a7-4851-ad26-626e7c6255e1"
+            name="Remove Item from Table"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0ca0709e-56fa-427d-a36d-fa248dbce977"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="02275929-7c7e-4150-ae47-cba2eb366a72"
+                  LastKnownName="Click Table with desired Number"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="02275929-7c7e-4150-ae47-cba2eb366a72"
+            name="Click Table with desired Number"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2edea0c9-b7d4-4874-b8ac-7935066f4b54"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a21ba7a6-f1b9-4556-b878-daf11f2149c7"
+                  LastKnownName="Go To Food menu"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a21ba7a6-f1b9-4556-b878-daf11f2149c7"
+            name="Go To Food menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6a09758d-d6d1-4cf1-b79b-6af5f4bb35ce"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="db902f4e-5f58-44e8-ac45-4cf789b8f4f7"
+                  LastKnownName="Click Remove Item Button"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="db902f4e-5f58-44e8-ac45-4cf789b8f4f7"
+            name="Click Remove Item Button"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3309123a-d2b3-41ff-88e3-2b03e2dcc3dd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8b43a265-5c3c-467a-9efd-1d561c629c68"
+                  LastKnownName="Remove Item Menu Menu Appears in Frame"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8b43a265-5c3c-467a-9efd-1d561c629c68"
+            name="Remove Item Menu Menu Appears in Frame"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0131d1b3-61b9-42b2-908f-0c3f28b7aa5a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a4d11d02-8d6b-461f-a0d1-2293f35a54aa"
+                  LastKnownName="Click Desired Item"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a4d11d02-8d6b-461f-a0d1-2293f35a54aa"
+            name="Click Desired Item"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c90df88d-958f-48aa-81ca-97f51fd7fe05"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2c971121-fa24-4152-91e1-beee30b73e06"
+                  LastKnownName="Item is Removed From Table"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2c971121-fa24-4152-91e1-beee30b73e06"
+            name="Item is Removed From Table"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c73a5c49-b059-47a6-8fb2-e81152b79d59"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="0365d1fa-0a10-4031-afb7-b55168f909bf"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Joe's Burgers UML.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="0365d1fa-0a10-4031-afb7-b55168f909bf"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

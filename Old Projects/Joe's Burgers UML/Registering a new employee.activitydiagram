@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="cb69908b-6f6a-4af5-909a-14d7a39a2f6e" name="Activity Diagram" linkedPackageId="f2009d1d-06f9-495e-a444-76f4111bf921" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4960a7da-66b5-4dea-9b05-ce5e3372d3ac">
+      <profileInstance Id="108a9ad9-7eda-49e2-86ce-d2bb47c90e9b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3531a50f-689e-492c-b5f6-42a0dc5a671a">
+      <profileInstance Id="0b938db9-2df7-4449-97c2-db2dd160fcbd" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="89b7c5e6-070b-4c7f-a4fb-3ed244c72b15" name="Activity Diagram" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f1686f33-7a58-458f-9553-1ade74d24ce5" />
+        <nodes>
+          <initialNode Id="5825677e-d237-464d-9a75-35ff5fb3b0ce" name="Initial1" isLeaf="false">
+            <elementDefinition Id="9353a8fe-09af-4b0e-b1be-2149c32908e2" />
+            <flowNodeTargets>
+              <controlFlow Id="36174bcd-56c7-47c2-bcad-21b98605f0e7" isLeaf="false">
+                <opaqueActionMoniker Id="98958ecc-4bae-4767-b5ed-be38b755ccfc" LastKnownName="Registering a new employee" />
+                <elementDefinition Id="500d0dc4-dfdc-41d5-83c3-d5b634dc9af6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="98958ecc-4bae-4767-b5ed-be38b755ccfc" name="Registering a new employee" isLeaf="false">
+            <elementDefinition Id="d8a11e53-10c6-4dc0-b332-228e658e1ea7" />
+            <flowNodeTargets>
+              <controlFlow Id="7efc6686-aecf-4e94-a277-12e5ea3c0634" isLeaf="false">
+                <opaqueActionMoniker Id="c8e1c0d8-9f97-4403-951d-aa585522f0e0" LastKnownName="Click Register New Employee Button" />
+                <elementDefinition Id="caac4031-1185-474b-baaa-922fcc35c69a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c8e1c0d8-9f97-4403-951d-aa585522f0e0" name="Click Register New Employee Button" isLeaf="false">
+            <elementDefinition Id="1dbad365-e45f-4a17-94f3-2d198d127505" />
+            <flowNodeTargets>
+              <controlFlow Id="5a2e6e53-a474-41f9-9fc2-7db9abdade98" isLeaf="false">
+                <opaqueActionMoniker Id="f3be1324-bf97-41f8-83bd-e806d19196d8" LastKnownName="Record new username and password of employee" />
+                <elementDefinition Id="be5063c6-fb8f-406a-9e85-16a5a836dfbe" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f3be1324-bf97-41f8-83bd-e806d19196d8" name="Record new username and password of employee" isLeaf="false">
+            <elementDefinition Id="26c6c51a-b202-4d16-823a-7b91371bcc0d" />
+            <flowNodeTargets>
+              <controlFlow Id="96b8fe65-30fd-4b11-9705-6061d14a8dd0" isLeaf="false">
+                <opaqueActionMoniker Id="53596912-2835-442d-8df7-ab7538dd1e70" LastKnownName="Click Register Button" />
+                <elementDefinition Id="81144834-408e-45c4-a393-bb58d7e50e56" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="53596912-2835-442d-8df7-ab7538dd1e70" name="Click Register Button" isLeaf="false">
+            <elementDefinition Id="c9db4a66-da29-449c-846c-3ba5b4259050" />
+            <flowNodeTargets>
+              <controlFlow Id="93429ff9-c7f4-4620-a8c6-ceae0ef9216e" isLeaf="false">
+                <opaqueActionMoniker Id="60cb3ba2-2151-4fd5-88ab-502ccd1b2e44" LastKnownName="Save to Database" />
+                <elementDefinition Id="77d84597-04ea-4f73-bca9-7eef2cdbe1f6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="60cb3ba2-2151-4fd5-88ab-502ccd1b2e44" name="Save to Database" isLeaf="false">
+            <elementDefinition Id="e4185dae-4ed7-4e22-92e9-9f952f673400" />
+            <flowNodeTargets>
+              <controlFlow Id="4cba2105-7570-4b2d-8245-b6dca26b59fd" isLeaf="false">
+                <opaqueActionMoniker Id="5fca5ec6-7a25-41df-bdb2-b2d50f18f9fe" LastKnownName="Back to Main Page" />
+                <elementDefinition Id="794d206e-cd54-4dac-b174-b048bf660ef5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="3a83969b-4493-44f8-8132-7ec6ae45e3a5" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="ed3c6b41-081d-4050-a902-c061cbe0c1e4" />
+          </activityFinalNode>
+          <opaqueAction Id="5fca5ec6-7a25-41df-bdb2-b2d50f18f9fe" name="Back to Main Page" isLeaf="false">
+            <elementDefinition Id="9f8a7ed8-c938-433a-99b1-0db2d842a40c" />
+            <flowNodeTargets>
+              <controlFlow Id="7a2e4ceb-46f0-4a59-be29-66ae836569f9" isLeaf="false">
+                <activityFinalNodeMoniker Id="3a83969b-4493-44f8-8132-7ec6ae45e3a5" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="13ade68f-fbb6-4d49-af5e-239a7a66a83c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="f2009d1d-06f9-495e-a444-76f4111bf921" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>

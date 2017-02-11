@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d1eb5eb8-49e6-4e9e-8c4b-3b116ac279f0" name="Close Order on Table" linkedPackageId="ba3acc74-1983-4aa9-a91a-5f3483842031" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="bdb206b0-bacd-4c96-92c2-8a7ac03441c8">
+      <profileInstance Id="bea6327a-0291-49ba-90d9-fbf6cf210632" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="642bb49f-8ed5-4686-a54e-302e2be435e7">
+      <profileInstance Id="1c691160-0f3f-4f1b-b704-f3fbfdd08512" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="5f1127ee-8ecf-41b8-9e84-dc4f67ecb45c" name="Close Order on Table" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="7d6a4c86-79b1-4b0d-b773-ec55f67f86e7" />
+        <nodes>
+          <initialNode Id="b3ade0fe-42cf-4acf-8a99-95822d04999c" name="Initial1" isLeaf="false">
+            <elementDefinition Id="8e850521-db79-4063-bcc0-489bd5175b8a" />
+            <flowNodeTargets>
+              <controlFlow Id="008c6def-c7f3-4439-97ba-c8ba2269f3d0" isLeaf="false">
+                <opaqueActionMoniker Id="917f3a75-0bea-41a9-968d-75045f3e2ec9" LastKnownName="Close an Order" />
+                <elementDefinition Id="658f9eb6-59f5-41be-b702-f6d31686cd2e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="917f3a75-0bea-41a9-968d-75045f3e2ec9" name="Close an Order" isLeaf="false">
+            <elementDefinition Id="d4403dec-76f7-417c-8bd4-6101da40faa3" />
+            <flowNodeTargets>
+              <controlFlow Id="f481e10d-ecbe-4c72-9641-18a32f6629fd" isLeaf="false">
+                <opaqueActionMoniker Id="9f4138e8-35a1-4d42-8efa-9ebab8345e77" LastKnownName="Go to Checkout Menu" />
+                <elementDefinition Id="d83b3d12-0c09-4d70-beed-dd1280e5e5ba" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9f4138e8-35a1-4d42-8efa-9ebab8345e77" name="Go to Checkout Menu" isLeaf="false">
+            <elementDefinition Id="84735039-9b89-406e-96ca-0a4e2c1dd448" />
+            <flowNodeTargets>
+              <controlFlow Id="c8d3d0e2-cc02-4228-912a-17db985a1095" isLeaf="false">
+                <opaqueActionMoniker Id="6d3d1e5e-bbd2-412c-8cea-1c2d1d7c454d" LastKnownName="Complete Transaction" />
+                <elementDefinition Id="119ec5fa-0bca-4a8c-a83d-6950c0833c1c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6d3d1e5e-bbd2-412c-8cea-1c2d1d7c454d" name="Complete Transaction" isLeaf="false">
+            <elementDefinition Id="e285f777-2cb5-423c-8d76-91e6a62b91e3" />
+            <flowNodeTargets>
+              <controlFlow Id="1a78f507-af4e-4bd4-92a1-0989355599d8" isLeaf="false">
+                <opaqueActionMoniker Id="9879986b-0e70-4956-a39c-2ae95e8f5409" LastKnownName="Click Close Button" />
+                <elementDefinition Id="7a7849da-3e3b-4788-9bc0-c6d3ee4688fb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9879986b-0e70-4956-a39c-2ae95e8f5409" name="Click Close Button" isLeaf="false">
+            <elementDefinition Id="b50dc9ee-8bae-4dd0-9b1b-0549b56c7978" />
+            <flowNodeTargets>
+              <controlFlow Id="d15bfd5e-3791-4b3b-9112-9faf6dfdb023" isLeaf="false">
+                <forkNodeMoniker Id="6eddc176-823d-43c2-b8d1-34cc29b121ad" LastKnownName="Fork1" />
+                <elementDefinition Id="e196413e-390d-4053-bb7b-e98b9231915d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cc797e26-1dd5-47d6-8a98-7a73e158ffee" name="Go to Two Button Menu" isLeaf="false">
+            <elementDefinition Id="799b9a76-b60f-4b62-b59f-40d1bff261de" />
+            <flowNodeTargets>
+              <controlFlow Id="b4084b14-0184-40c6-9389-e3ac4498f8bd" isLeaf="false">
+                <activityFinalNodeMoniker Id="5c39fedd-4618-4019-a70e-93a196aac823" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="111f5c83-29e1-40d9-a3d6-917394d00681" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="af6deede-3e7c-4d5d-b73c-3ece77cf67b4" name="Clear Table" isLeaf="false">
+            <elementDefinition Id="2861ac60-53cb-4d6a-97cd-e4760731573a" />
+          </opaqueAction>
+          <forkNode Id="6eddc176-823d-43c2-b8d1-34cc29b121ad" name="Fork1" isLeaf="false">
+            <elementDefinition Id="84d6450a-7ec7-421a-a0f2-609c99eddf9b" />
+            <flowNodeTargets>
+              <controlFlow Id="f98be12e-3d75-46fa-8903-0fde7bbafcb7" isLeaf="false">
+                <opaqueActionMoniker Id="cc797e26-1dd5-47d6-8a98-7a73e158ffee" LastKnownName="Go to Two Button Menu" />
+                <elementDefinition Id="6b07c72c-cc95-4393-8808-b58eb13d54f3" />
+              </controlFlow>
+              <controlFlow Id="a51e7a10-a796-49e3-8c67-5d1ceb4ef1d6" isLeaf="false">
+                <opaqueActionMoniker Id="af6deede-3e7c-4d5d-b73c-3ece77cf67b4" LastKnownName="Clear Table" />
+                <elementDefinition Id="d9300cd0-bda7-438c-8968-4dd50c7855d7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <activityFinalNode Id="5c39fedd-4618-4019-a70e-93a196aac823" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="9f047878-fa0c-4be2-919b-a5ae9d02d823" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="ba3acc74-1983-4aa9-a91a-5f3483842031" name="Joe's Burgers UML">
+    <elementDefinition Id="309679f1-641d-42e1-9ee4-e7439f7cf3b5" />
+  </package>
+</activityRootModel>
