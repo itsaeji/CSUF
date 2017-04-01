@@ -1,0 +1,80 @@
+#!/bin/bash
+awk 'BEGIN{print "\nPrice\tMileage\tYear\tBrand\tModel"}'
+awk '{
+if($1 == "Honda")
+{print $5"\t"$4"\t"$3"\t"$1"\t"$2}
+}' Car_list | sort -nr
+awk 'BEGIN{count = 0}
+{if($1 == "Honda" && $2 != "placeholder") 
+{count++}}
+END{print "Number of Hondas: ", count}' Car_list
+
+awk 'BEGIN{print "\nPrice\tMileage\tYear\tBrand\tModel"}'
+awk '{
+if($1 == "Nissan")
+{print $5"\t"$4"\t"$3"\t"$1"\t"$2}
+}' Car_list | sort -nr
+
+awk 'BEGIN{count = 0}
+{if($1 == "Nissan" && $2 != "placeholder")
+{count++}}
+END{print "Number of Nissans: ", count}' Car_list
+
+
+awk 'BEGIN{print "\nPrice\tMileage\tYear\tBrand\tModel"}'
+awk '{
+if($1 == "Subaru")
+{print $5"\t"$4"\t"$3"\t"$1"\t"$2}
+}' Car_list | sort -nr
+
+awk 'BEGIN{count = 0}
+{if($1 == "Subaru" && $2 != "placeholder")
+{count++}}
+END{print "Number of Subarus: ", count}' Car_list
+
+
+awk 'BEGIN{print "\nPrice\tMileage\tYear\tBrand\tModel"}'
+awk '{
+if($1 == "Toyota")
+{print $5"\t"$4"\t"$3"\t"$1"\t"$2}
+}' Car_list | sort -nr
+
+awk 'BEGIN{count = 0}
+{if($1 == "Toyota" && $2 != "placeholder")
+{count++}}
+END{print "Number of Toyotas: ", count}' Car_list
+
+
+awk 'BEGIN{print "\nPrice\tMileage\tYear\tBrand\tModel"}'
+awk '{
+if($1 == "Suzuki")
+{print $5"\t"$4"\t"$3"\t"$1"\t"$2}
+}' Car_list | sort -nr
+
+awk 'BEGIN{count = 0}
+{if($1 == "Suzuki" && $2 != "placeholder")
+{count++}}
+END{print "Number of Suzukis: ", count}' Car_list
+
+
+awk 'BEGIN{print "\nPrice\tMileage\tYear\tBrand\tModel"}'
+awk '{
+if($1 == "Mazda")
+{print $5"\t"$4"\t"$3"\t"$1"\t"$2}
+}' Car_list | sort -nr
+
+awk 'BEGIN{count = 0}
+{if($1 == "Mazda" && $2 != "placeholder")
+{count++}}
+END{print "Number of Mazdas: ", count}' Car_list
+
+
+awk 'BEGIN{print "\nPrice\tMileage\tYear\tBrand\tModel"}'
+awk '{
+if($5 < 25000 && $5 > 10000)
+{print $5"\t"$4"\t"$3"\t"$1"\t"$2}
+}' Car_list | sort -nr
+
+awk 'BEGIN{highestCar = 0}
+{if($5 > highestCar){highestCar = $5}}
+END{print "Most expensive car is $" highestCar}' Car_list
