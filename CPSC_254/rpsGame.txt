@@ -1,0 +1,86 @@
+#!/bin/bash
+# Written by Anthony Garcia
+if [ ! -d "$(date '+%B_%Y')" ]
+then
+	mkdir "$(date '+%B_%Y')"
+fi
+cd "$(date '+%B_%Y')"
+printf "\nWelcome to Rock, Paper, Scissors!\n"
+range=3
+continueRunning=1
+dateToUse="$(date '+%A_%d-%H_%M_%S_%N')"
+while [ $continueRunning -eq 1 ]
+do
+        printf "\nLet's play a round of rock, paper, scissors! Enter 1 for Rock, 2 for Paper and 3 for Scissors!\n"
+        read userInput
+        computerInput=$RANDOM
+        let "computerInput %= $range"
+        let "computerInput += 1"
+        if [ $computerInput = $userInput ]
+        then
+                printf "You both chose the same! We have a tie!\n"
+		touch "RPS_TIE_$dateToUse.out"
+		printf "$(date	'+%H_%M_%S_%A_%d_%Y')$userInput $computerInput TIE\n" >> "RPS_TIE_$dateToUse.out"
+        elif [ $userInput = 1 && $computerInput != 1 ]
+        then
+                printf "You chose Rock!\n"
+                if [ $computerInput = 2 ]
+                then
+                        printf "The computer chose Paper!\n"
+                        printf "Aww! You lost!\n"
+                        touch "RPS_CPU-WIN_$dateToUse.out"
+			printf "$(date '+%H_%M_%S_%A_%d_%Y')$userInput $computerInput CPU_WIN\n" >> "RPS_CPU-WIN_$dateToUse.out"
+                else
+                        printf "The computer chose Scissors!\n"
+                        printf "Congratulations! You win!\n"
+                        touch "RPS_USER-WIN_$dateToUse.out"
+                        printf "$(date '+%H_%M_%S_%A_%d_%Y')$userInput $computerInput USER_WIN\n" >> "RPS_USER-WIN_$dateToUse.out"
+                fi
+        elif [ $userInput = 2 && $computerInput != 2 ]
+        then
+                printf "You chose Paper!\n"
+                if [ $computerInput = 3 ]
+                then
+                        printf "The computer chose Scissors!\n"
+                        printf "Aww! You lose!\n"
+                        touch "RPS_CPU-WIN_$dateToUse.out"
+                        printf "$(date '+%H_%M_%S_%A_%d_%Y')$userInput $computerInput CPU_WIN\n" >> "RPS_CPU_WIN_$dateToUse.out"
+
+                else
+                        printf "The computer chose Rock!\n"
+                        printf "Congratulations! You win!\n"
+                        touch "RPS_USER-WIN_$dateToUse.out"
+                        printf "$(date '+%H_%M_%S_%A_%d_%Y')$userInput $computerInput USER_WIN\n" >> "RPS_USER-WIN_$dateToUse.out"
+                fi
+        elif [ $userInput = 3 && $computerInput != 3 ]
+        then
+                printf "You chose Scissors!\n"
+                if [ $computerInput = 1 ]
+                then
+                        printf "The computer chose Rock!\n"
+                        printf "Aww! You lost!\n"
+                        touch "RPS_CPU-WIN_$dateToUse.out"
+                        printf "$(date '+%H_%M_%S_%A_%d_%Y')$userInput $computerInput CPU_WIN\n" >> "RPS_CPU-WIN_$dateToUse.out"
+                else
+                        printf "The computer chose Paper!\n"
+                        printf "Congratulations! You win!\n"
+                        touch "RPS_USER-WIN_$dateToUse.out"
+                        printf "$(date '+%H_%M_%S_%A_%d_%Y')$userInput $computerInput USER_WIN\n" >> "RPS_USER-WIN_$dateToUse.out"
+                fi
+	else
+		printf "That is not a valid choice.\n"
+	fi
+        printf "Do you want to play again? (y/n)"
+        read decision
+        if [ $decision == "y" ]
+        then
+                continueRunning=1
+        elif [ $decision == "n" ]
+	then
+                continueRunning=0
+	else
+		printf "That is not a valid input. Exiting program...\n"
+		continueRunning=0
+        fi
+done
+cd ..
