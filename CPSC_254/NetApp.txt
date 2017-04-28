@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+use Data::Dumper qw(Dumper);
+open(DATA2, ">raw_info.csv");
+my $file = 'raw_info.txt';
+open my $info, $file or die "Could not open $file: $!";
+while( my $line = <$info>)
+{
+        if ($. >= 4)
+        {
+                @categories = split /\s{2,}/, $line;
+                foreach(@categories)
+                {
+                        print "$_,";
+                }
+        }
+        last if $. == 23;
+}
+close $info;
