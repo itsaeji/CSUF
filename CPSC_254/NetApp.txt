@@ -1,18 +1,32 @@
+
 #!/usr/bin/perl
 use Data::Dumper qw(Dumper);
-open(DATA2, ">raw_info.csv");
+open(my $fileToWrite, '>', "raw_info.csv");
 my $file = 'raw_info.txt';
-open my $info, $file or die "Could not open $file: $!";
+open
+my @categories;
 while( my $line = <$info>)
 {
+        if ($. == 1)
+        {
+                print $line;
+        }
+        if ($. == 2)
+        {
+                print $line;
+        }
         if ($. >= 4)
         {
-                @categories = split /\s{2,}/, $line;
-                foreach(@categories)
-                {
-                        print "$_,";
-                }
+                push @categories, $line;
         }
         last if $. == 23;
 }
+my $count = 0;
+while( $count < @categories)
+{
+        my @str = split /\s{2,}/, $categories[$count];
+        print $myFileToWrite @categories;
+        $count += 1;
+}
+print Dumper \@categories;
 close $info;
