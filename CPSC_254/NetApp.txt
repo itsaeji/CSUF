@@ -1,10 +1,12 @@
-
 #!/usr/bin/perl
 use Data::Dumper qw(Dumper);
-open(my $fileToWrite, '>', "raw_info.csv");
+open(my $fileToWrite, ">raw_info.csv");
 my $file = 'raw_info.txt';
-open
+open(my $info, '<:encoding(UTF-8)', $file);
 my @categories;
+print "Please input whatever you would like to use as a filter, otherwise if you do not want to use a filter, enter -1: ";
+my $input = <STDIN>;
+chomp $input;
 while( my $line = <$info>)
 {
         if ($. == 1)
@@ -17,16 +19,25 @@ while( my $line = <$info>)
         }
         if ($. >= 4)
         {
+                chomp $line;
                 push @categories, $line;
         }
         last if $. == 23;
 }
-my $count = 0;
-while( $count < @categories)
+my @sorted = sort { (split(/\s{2,}/, $b))[4] <=> (split(/\s{2,}/, $a))[4] } @categories;
+foreach(@sorted)
 {
-        my @str = split /\s{2,}/, $categories[$count];
-        print $myFileToWrite @categories;
-        $count += 1;
+        if ($input != '-1' && $_ =~ m/\Q$input\E/g)
+        {
+                next;
+        }
+        else
+        {
+                $_ =~ s/\s{2,}/","/g;
+                print $fileToWrite $_;
+                print $fileToWrite "\n";
+                print $_;
+                print "\n";
+        }
 }
-print Dumper \@categories;
 close $info;
